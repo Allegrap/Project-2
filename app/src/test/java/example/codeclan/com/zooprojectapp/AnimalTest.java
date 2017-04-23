@@ -37,4 +37,9 @@ public class AnimalTest {
     public void getPredatorStatus(){
         assertEquals(false, animal.getPredator());
     }
+
+    @Test
+    public void getMaturity(){
+        assertEquals("adult", animal.getMaturity());
+    }
 }
