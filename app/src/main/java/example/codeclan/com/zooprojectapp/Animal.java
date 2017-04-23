@@ -32,4 +32,8 @@ public class Animal {
     public char getGender() {
         return gender;
     }
+
+    public boolean getPredator() {
+        return predator;
+    }
 }
