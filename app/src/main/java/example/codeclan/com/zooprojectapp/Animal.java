@@ -28,4 +28,8 @@ public class Animal {
     public String getType() {
         return type;
     }
+
+    public char getGender() {
+        return gender;
+    }
 }
