@@ -36,4 +36,8 @@ public class Animal {
     public boolean getPredator() {
         return predator;
     }
+
+    public String getMaturity() {
+        return maturity;
+    }
 }
