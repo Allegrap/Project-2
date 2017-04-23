@@ -27,4 +27,9 @@ public class AnimalTest {
     public void getType(){
         assertEquals("rhino", animal.getType());
     }
+
+    @Test
+    public void getGender(){
+        assertEquals('m', animal.getGender());
+    }
 }
