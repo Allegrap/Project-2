@@ -32,4 +32,9 @@ public class AnimalTest {
     public void getGender(){
         assertEquals('m', animal.getGender());
     }
+
+    @Test
+    public void getPredatorStatus(){
+        assertEquals(false, animal.getPredator());
+    }
 }
