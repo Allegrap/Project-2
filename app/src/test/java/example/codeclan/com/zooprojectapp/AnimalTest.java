@@ -22,4 +22,9 @@ public class AnimalTest {
     public void getName(){
         assertEquals("Bertie", animal.getName());
     }
+
+    @Test
+    public void getType(){
+        assertEquals("rhino", animal.getType());
+    }
 }
