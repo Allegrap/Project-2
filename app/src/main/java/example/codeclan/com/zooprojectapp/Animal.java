@@ -48,4 +48,12 @@ public abstract class Animal {
     public void sleep(){
         belly.clear();
     }
+
+    public int totalNutrition(){
+        int totalFood = 0;
+        for(Edible food : belly){
+            totalFood += food.getNutritionalValue();
+        }
+        return totalFood;
+    }
 }
