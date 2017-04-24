@@ -11,12 +11,16 @@ public class Enclosure {
     private ArrayList<Animal> animals;
     private ArrayList<Integer> availableFood;
 
-    public Enclosure(ArrayList<Animal> animals, ArrayList<Integer> availableFood){
-        this.animals = animals;
-        this.availableFood = availableFood;
+    public Enclosure(){
+        this.animals = new ArrayList<Animal>();
+        this.availableFood = new ArrayList<Integer>();
     }
 
     public int numberOfAnimals() {
         return animals.size();
+    }
+
+    public void addAnimal(Animal animal){
+        animals.add(animal);
     }
 }

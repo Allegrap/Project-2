@@ -1,5 +1,6 @@
 package example.codeclan.com.zooprojectapp;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
@@ -10,10 +11,19 @@ import static junit.framework.Assert.assertEquals;
 
 public class EnclosureTest {
 
+    Enclosure enclosure;
+    Animal animal;
+
+    @Before
+    public void before(){
+        enclosure = new Enclosure();
+        animal = new Animal("Bertie", "rhino", 'm', false, "adult");
+    }
+
     @Test
     public void addAnimalTest(){
-        Enclosure.addAnimal("Bertie", "rhino", 'm', false, "adult");
-        assertEquals(1, Enclosure.numberOfAnimals());
+        enclosure.addAnimal(animal);
+        assertEquals(1, enclosure.numberOfAnimals());
     }
 
 }
