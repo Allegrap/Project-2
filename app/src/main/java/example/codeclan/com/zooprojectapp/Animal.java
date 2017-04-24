@@ -44,4 +44,8 @@ public abstract class Animal {
     public void eat(Edible edible){
         belly.add(edible);
     }
+
+    public void sleep(){
+        belly.clear();
+    }
 }
