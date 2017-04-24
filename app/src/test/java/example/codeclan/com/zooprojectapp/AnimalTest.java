@@ -66,7 +66,9 @@ public class AnimalTest {
 
     @Test
     public void getNutritionalValueOfBellyTest(){
-
+        herbivore.eat(foodVeg);
+        herbivore.eat(foodVeg2);
+        assertEquals(10, herbivore.totalNutrition());
     }
 
 }
