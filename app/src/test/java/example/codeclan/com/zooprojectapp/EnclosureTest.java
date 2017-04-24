@@ -12,18 +12,27 @@ import static junit.framework.Assert.assertEquals;
 public class EnclosureTest {
 
     Enclosure enclosure;
-    Animal animal;
+    Animal animal1;
+    Animal animal2;
 
     @Before
     public void before(){
         enclosure = new Enclosure();
-        animal = new Animal("Bertie", "rhino", 'm', false, "adult");
+        animal1 = new Animal("Bertie", "rhino", 'm', false, "adult");
+        animal2 = new Animal("Banana", "hippo", 'f', false, "baby");
     }
 
     @Test
     public void addAnimalTest(){
-        enclosure.addAnimal(animal);
+        enclosure.addAnimal(animal1);
         assertEquals(1, enclosure.numberOfAnimals());
+    }
+
+    @Test
+    public void canGetAnimalsList(){
+        enclosure.addAnimal(animal1);
+        enclosure.addAnimal(animal2);
+        assertEquals(2, enclosure.getAnimals().size());
     }
 
 }
