@@ -11,30 +11,32 @@ import static junit.framework.Assert.assertEquals;
 
 public class AnimalTest {
 
-    Animal animal;
+    Herbivore herbivore;
+    Carnivore carnivore;
 
     @Before
     public void before(){
-        animal = new Animal("Bertie", "rhino", 'm', "adult");
+        herbivore = new Herbivore("Bertie", "rhino", 'm', "adult");
+        carnivore = new Carnivore("Darren", "leopard", 'm', "baby");
     }
 
     @Test
     public void getName(){
-        assertEquals("Bertie", animal.getName());
+        assertEquals("Bertie", herbivore.getName());
     }
 
     @Test
     public void getType(){
-        assertEquals("rhino", animal.getType());
+        assertEquals("leopard", carnivore.getType());
     }
 
     @Test
     public void getGender(){
-        assertEquals('m', animal.getGender());
+        assertEquals('m', herbivore.getGender());
     }
 
     @Test
     public void getMaturity(){
-        assertEquals("adult", animal.getMaturity());
+        assertEquals("adult", herbivore.getMaturity());
     }
 }
