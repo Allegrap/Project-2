@@ -9,11 +9,11 @@ import java.util.ArrayList;
 public class Enclosure {
 
     private ArrayList<Animal> animals;
-    private ArrayList<Integer> availableFood;
+    private ArrayList<Food> food;
 
     public Enclosure(){
         this.animals = new ArrayList<Animal>();
-        this.availableFood = new ArrayList<Integer>();
+        this.food = new ArrayList<Food>();
     }
 
     public int numberOfAnimals() {
