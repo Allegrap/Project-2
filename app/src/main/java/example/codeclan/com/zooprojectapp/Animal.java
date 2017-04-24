@@ -38,4 +38,6 @@ public abstract class Animal {
     public String getMaturity() {
         return maturity;
     }
+
+    public int getBellySize() { return belly.size(); }
 }
