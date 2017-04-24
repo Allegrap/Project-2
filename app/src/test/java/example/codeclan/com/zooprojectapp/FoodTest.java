@@ -8,6 +8,11 @@ import org.junit.Before;
 
 public class FoodTest {
 
+    Food food;
 
+    @Before
+    public void before(){
+        food = new Food(FoodType.MEAT, 9);
+    }
 
 }
