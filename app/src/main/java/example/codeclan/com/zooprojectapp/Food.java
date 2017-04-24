@@ -18,4 +18,7 @@ public class Food implements Edible{
         return this.nutritionValue;
     }
 
+    public FoodType getFoodType() {
+        return foodType;
+    }
 }
