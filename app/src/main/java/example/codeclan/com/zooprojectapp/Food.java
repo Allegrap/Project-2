@@ -7,15 +7,15 @@ package example.codeclan.com.zooprojectapp;
 public class Food implements Edible{
 
     private FoodType foodType;
-    private int nutritionValue;
+    private int nutritionalValue;
 
     public Food(FoodType foodType, int nutritionValue){
         this.foodType = foodType;
-        this.nutritionValue = nutritionValue;
+        this.nutritionalValue = nutritionValue;
     }
 
     public int getNutritionalValue(){
-        return this.nutritionValue;
+        return this.nutritionalValue;
     }
 
     public FoodType getFoodType() {

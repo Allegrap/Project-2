@@ -13,13 +13,15 @@ public class AnimalTest {
 
     Herbivore herbivore;
     Carnivore carnivore;
-    Food food;
+    Food foodVeg;
+    Food foodMeat;
 
     @Before
     public void before(){
         herbivore = new Herbivore("Bertie", "rhino", 'm', "adult");
         carnivore = new Carnivore("Darren", "leopard", 'm', "baby");
-        food = new Food(FoodType.GRASS, 4);
+        foodVeg = new Food(FoodType.GRASS, 4);
+        foodMeat = new Food(FoodType.MEAT, 9);
     }
 
     @Test
@@ -49,15 +51,20 @@ public class AnimalTest {
 
     @Test
     public void canEatTest(){
-        herbivore.eat(food);
+        herbivore.eat(foodVeg);
         assertEquals(1, herbivore.getBellySize());
     }
 
     @Test
-    public void bellyEmptiesAfterSleep(){
-        herbivore.eat(food);
+    public void bellyEmptiesAfterSleepTest(){
+        herbivore.eat(foodVeg);
         herbivore.sleep();
         assertEquals(0, herbivore.getBellySize());
+    }
+
+    @Test
+    public void getNutritionalValueOfBellyTest(){
+
     }
 
 }
