@@ -14,6 +14,7 @@ public class AnimalTest {
     Herbivore herbivore;
     Carnivore carnivore;
     Food foodVeg;
+    Food foodVeg2;
     Food foodMeat;
 
     @Before
@@ -21,6 +22,7 @@ public class AnimalTest {
         herbivore = new Herbivore("Bertie", "rhino", 'm', "adult");
         carnivore = new Carnivore("Darren", "leopard", 'm', "baby");
         foodVeg = new Food(FoodType.GRASS, 4);
+        foodVeg2 = new Food(FoodType.VEGETABLES, 6);
         foodMeat = new Food(FoodType.MEAT, 9);
     }
 

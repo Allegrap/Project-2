@@ -6,5 +6,6 @@ package example.codeclan.com.zooprojectapp;
 
 public enum FoodType{
     MEAT,
-    GRASS
+    GRASS,
+    VEGETABLES
 }
