@@ -40,4 +40,8 @@ public abstract class Animal {
     }
 
     public int getBellySize() { return belly.size(); }
+
+    public void eat(Edible edible){
+        belly.add(edible);
+    }
 }
