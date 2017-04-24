@@ -6,9 +6,11 @@ package example.codeclan.com.zooprojectapp;
 
 public abstract class Food implements Edible{
 
-    int nutritionValue;
+    private FoodType foodType;
+    private int nutritionValue;
 
-    public Food(int nutritionValue){
+    public Food(FoodType foodType, int nutritionValue){
+        this.foodType = foodType;
         this.nutritionValue = nutritionValue;
     }
 
