@@ -6,6 +6,6 @@ package example.codeclan.com.zooprojectapp;
 
 public interface Edible {
 
-    public int getNutritionValue();
+    int getNutritionalValue();
 
 }

@@ -14,7 +14,7 @@ public class Food implements Edible{
         this.nutritionValue = nutritionValue;
     }
 
-    public int getNutritionValue(){
+    public int getNutritionalValue(){
         return this.nutritionValue;
     }
 
