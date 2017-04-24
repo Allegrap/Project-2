@@ -13,30 +13,38 @@ public class AnimalTest {
 
     Herbivore herbivore;
     Carnivore carnivore;
+    Food food;
 
     @Before
     public void before(){
         herbivore = new Herbivore("Bertie", "rhino", 'm', "adult");
         carnivore = new Carnivore("Darren", "leopard", 'm', "baby");
+        food = new Food(FoodType.GRASS, 4);
     }
 
     @Test
-    public void getName(){
+    public void getNameTest(){
         assertEquals("Bertie", herbivore.getName());
     }
 
     @Test
-    public void getType(){
+    public void getTypeTest(){
         assertEquals("leopard", carnivore.getType());
     }
 
     @Test
-    public void getGender(){
+    public void getGenderTest(){
         assertEquals('m', herbivore.getGender());
     }
 
     @Test
-    public void getMaturity(){
+    public void getMaturityTest(){
         assertEquals("adult", herbivore.getMaturity());
     }
+
+    @Test
+    public void canGetBellySize(){
+        assertEquals(0, herbivore.bellySize());
+    }
+
 }
