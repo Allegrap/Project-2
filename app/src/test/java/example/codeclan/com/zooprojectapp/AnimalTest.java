@@ -15,7 +15,7 @@ public class AnimalTest {
 
     @Before
     public void before(){
-        animal = new Animal("Bertie", "rhino", 'm', false, "adult");
+        animal = new Animal("Bertie", "rhino", 'm', "adult");
     }
 
     @Test
@@ -31,11 +31,6 @@ public class AnimalTest {
     @Test
     public void getGender(){
         assertEquals('m', animal.getGender());
-    }
-
-    @Test
-    public void getPredatorStatus(){
-        assertEquals(false, animal.getPredator());
     }
 
     @Test

@@ -4,19 +4,17 @@ package example.codeclan.com.zooprojectapp;
  * Created by user on 23/04/2017.
  */
 
-public class Animal {
+public abstract class Animal {
 
     private String name;
     private String type;
     private char gender;
-    private boolean predator;
     private String maturity;
 
-    public Animal(String name, String type, char gender, boolean predator, String maturity){
+    public Animal(String name, String type, char gender, String maturity){
         this.name = name;
         this.type = type;
         this.gender = gender;
-        this.predator = predator;
         this.maturity = maturity;
     }
 
@@ -31,10 +29,6 @@ public class Animal {
 
     public char getGender() {
         return gender;
-    }
-
-    public boolean getPredator() {
-        return predator;
     }
 
     public String getMaturity() {
