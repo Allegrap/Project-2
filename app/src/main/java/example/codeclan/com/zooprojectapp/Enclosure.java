@@ -23,4 +23,8 @@ public class Enclosure {
     public void addAnimal(Animal animal){
         animals.add(animal);
     }
+
+    public ArrayList<Animal> getAnimals(){
+        return new ArrayList<Animal>(animals);
+    }
 }

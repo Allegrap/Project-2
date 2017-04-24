@@ -29,7 +29,7 @@ public class EnclosureTest {
     }
 
     @Test
-    public void canGetAnimalsList(){
+    public void getAnimalsListTest(){
         enclosure.addAnimal(animal1);
         enclosure.addAnimal(animal2);
         assertEquals(2, enclosure.getAnimals().size());
