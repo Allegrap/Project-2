@@ -9,6 +9,5 @@ import org.junit.Before;
 public class FoodTest {
 
 
-    }
 
 }
