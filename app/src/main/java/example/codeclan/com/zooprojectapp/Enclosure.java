@@ -15,4 +15,8 @@ public class Enclosure {
         this.animals = animals;
         this.availableFood = availableFood;
     }
+
+    public int numberOfAnimals() {
+        return animals.size();
+    }
 }
