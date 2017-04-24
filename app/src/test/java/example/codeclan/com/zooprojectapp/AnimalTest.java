@@ -53,4 +53,11 @@ public class AnimalTest {
         assertEquals(1, herbivore.getBellySize());
     }
 
+    @Test
+    public void bellyEmptiesAfterSleep(){
+        herbivore.eat(food);
+        herbivore.sleep();
+        assertEquals(0, herbivore.getBellySize());
+    }
+
 }
