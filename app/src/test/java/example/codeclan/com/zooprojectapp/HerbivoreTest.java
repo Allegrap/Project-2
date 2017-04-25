@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import example.codeclan.com.zooprojectapp.animals.Herbivore;
+import example.codeclan.com.zooprojectapp.animals.Hippo;
 import example.codeclan.com.zooprojectapp.food_management.Food;
 import example.codeclan.com.zooprojectapp.food_management.FoodType;
 
@@ -15,7 +16,7 @@ import static junit.framework.Assert.assertEquals;
 
 public class HerbivoreTest {
 
-    Herbivore herbivore;
+    Hippo hippo;
     Food meat;
     Food vegetables;
     Food grass;
@@ -23,7 +24,7 @@ public class HerbivoreTest {
 
     @Before
     public void before(){
-        herbivore = new Herbivore("Tony", "turtle", 'm', "adult");
+        hippo = new Hippo("Tony", 'm', "adult");
         meat = new Food(FoodType.MEAT, 9);
         vegetables = new Food(FoodType.VEGETABLES, 4);
         grass = new Food(FoodType.GRASS, 3);
@@ -32,26 +33,26 @@ public class HerbivoreTest {
 
     @Test
     public void canEatVegetablesTest(){
-        herbivore.eat(vegetables);
-        assertEquals(1, herbivore.getBellySize());
+        hippo.eat(vegetables);
+        assertEquals(1, hippo.getBellySize());
     }
 
     @Test
     public void canEatGrassTest(){
-        herbivore.eat(vegetables);
-        assertEquals(1, herbivore.getBellySize());
+        hippo.eat(vegetables);
+        assertEquals(1, hippo.getBellySize());
     }
 
     @Test
     public void canEatFruitTest(){
-        herbivore.eat(fruit);
-        assertEquals(1, herbivore.getBellySize());
+        hippo.eat(fruit);
+        assertEquals(1, hippo.getBellySize());
     }
 
     @Test
     public void cannotEatMeatTest(){
-        herbivore.eat(meat);
-        assertEquals(0, herbivore.getBellySize());
+        hippo.eat(meat);
+        assertEquals(0, hippo.getBellySize());
     }
 
 }
