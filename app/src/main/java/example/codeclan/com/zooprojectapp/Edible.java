@@ -7,5 +7,5 @@ package example.codeclan.com.zooprojectapp;
 public interface Edible {
 
     int getNutritionalValue();
-
+    FoodType getFoodType();
 }

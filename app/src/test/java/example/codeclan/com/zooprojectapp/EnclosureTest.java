@@ -37,7 +37,9 @@ public class EnclosureTest {
 
     @Test
     public void canFeedAnimalsTest(){
-        enclosure.feedAnimal(herbivore, FoodType.VEGETABLES);
+        enclosure.addAnimal(herbivore);
+        Food food = new Food(FoodType.VEGETABLES, 5);
+        enclosure.feedAnimal(herbivore, food);
         assertEquals(1, herbivore.getBellySize());
     }
 

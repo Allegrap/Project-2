@@ -8,15 +8,14 @@ import java.util.ArrayList;
 
 public class Herbivore extends Animal {
 
-    private ArrayList<Edible> belly;
 
     public Herbivore(String name, String type, char gender, String maturity){
         super(name, type, gender, maturity);
-        this.belly = new ArrayList<Edible>();
     }
 
+
     @Override
-    public void eat(Food food){
+    public void eat(Edible food){
         if(food.getFoodType() == FoodType.GRASS){
             belly.add(food);
         }

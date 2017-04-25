@@ -12,7 +12,7 @@ public abstract class Animal {
     private String type;
     private char gender;
     private String maturity;
-    private ArrayList<Edible> belly;
+    protected ArrayList<Edible> belly;
 
     public Animal(String name, String type, char gender, String maturity){
         this.name = name;

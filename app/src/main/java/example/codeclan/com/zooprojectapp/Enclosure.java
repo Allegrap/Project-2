@@ -27,4 +27,13 @@ public class Enclosure {
     public ArrayList<Animal> getAnimals(){
         return new ArrayList<Animal>(animals);
     }
+
+    public void feedAnimal(Animal animalToFeed, Edible edible){
+
+        for(Animal animal : animals){
+            if(animalToFeed.getName() == animal.getName()) {
+                animal.eat(edible);
+            }
+        }
+    }
 }
