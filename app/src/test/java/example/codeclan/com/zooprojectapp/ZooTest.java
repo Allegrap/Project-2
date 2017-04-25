@@ -66,4 +66,10 @@ public class ZooTest {
         assertEquals(5000, zoo.getTotalMoney());
     }
 
+    @Test
+    public void canTakeMoney(){
+        zoo.takeMoney(zoo.getEntryFee());
+        assertEquals(5020, zoo.getTotalMoney());
+    }
+
 }
