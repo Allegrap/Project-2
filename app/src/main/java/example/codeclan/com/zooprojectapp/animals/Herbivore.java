@@ -7,7 +7,7 @@ import example.codeclan.com.zooprojectapp.food_management.FoodType;
  * Created by user on 24/04/2017.
  */
 
-public class Herbivore extends Animal {
+public abstract class Herbivore extends Animal {
 
 
     public Herbivore(String name, String type, char gender, String maturity){
