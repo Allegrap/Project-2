@@ -75,7 +75,7 @@ public class ZooTest {
     @Test
     public void canAcceptStray(){
         zoo.acceptStray(stray);
-        assertEquals(1, zoo.countStrays());
+        assertEquals(1, zoo.strayCount());
     }
 
 }
