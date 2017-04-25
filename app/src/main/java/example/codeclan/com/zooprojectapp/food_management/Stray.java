@@ -6,13 +6,13 @@ import example.codeclan.com.zooprojectapp.Interfaces.Edible;
  * Created by user on 25/04/2017.
  */
 
-public class Strays implements Edible {
+public class Stray implements Edible {
 
     private String type;
     private FoodType foodType;
     private int nutritionalValue;
 
-    public Strays(String type, FoodType foodType, int nutritionValue){
+    public Stray(String type, FoodType foodType, int nutritionValue){
         this.type = type;
         this.foodType = foodType;
         this.nutritionalValue = nutritionValue;
