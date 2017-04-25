@@ -26,7 +26,7 @@ public class ZooTest {
 
     @Before
     public void before(){
-        zoo = new Zoo(20);
+        zoo = new Zoo(20, 5000);
         enclosure1 = new Enclosure();
         herbivore = new Herbivore("Bertie", "rhino", 'm', "adult");
         carnivore = new Carnivore("Darren", "leopard", 'm', "baby");
@@ -59,6 +59,11 @@ public class ZooTest {
     public void canAddVisitorTest(){
         zoo.addVisitor(visitor1);
         assertEquals(1, zoo.visitorCount());
+    }
+
+    @Test
+    public void canGetTotalMoney(){
+        assertEquals(5000, zoo.getTotalMoney());
     }
 
 }
