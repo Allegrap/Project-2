@@ -1,6 +1,6 @@
 package example.codeclan.com.zooprojectapp.animals;
 
-import example.codeclan.com.zooprojectapp.food_management.Edible;
+import example.codeclan.com.zooprojectapp.Interfaces.Edible;
 import example.codeclan.com.zooprojectapp.food_management.FoodType;
 
 /**

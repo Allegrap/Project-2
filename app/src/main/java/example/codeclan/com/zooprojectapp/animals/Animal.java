@@ -2,7 +2,7 @@ package example.codeclan.com.zooprojectapp.animals;
 
 import java.util.ArrayList;
 
-import example.codeclan.com.zooprojectapp.food_management.Edible;
+import example.codeclan.com.zooprojectapp.Interfaces.Edible;
 
 /**
  * Created by user on 23/04/2017.

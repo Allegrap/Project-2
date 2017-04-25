@@ -1,5 +1,7 @@
 package example.codeclan.com.zooprojectapp.food_management;
 
+import example.codeclan.com.zooprojectapp.Interfaces.Edible;
+
 /**
  * Created by user on 24/04/2017.
  */

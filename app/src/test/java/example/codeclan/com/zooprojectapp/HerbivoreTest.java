@@ -3,7 +3,6 @@ package example.codeclan.com.zooprojectapp;
 import org.junit.Before;
 import org.junit.Test;
 
-import example.codeclan.com.zooprojectapp.animals.Herbivore;
 import example.codeclan.com.zooprojectapp.animals.Hippo;
 import example.codeclan.com.zooprojectapp.food_management.Food;
 import example.codeclan.com.zooprojectapp.food_management.FoodType;
