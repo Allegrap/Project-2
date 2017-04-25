@@ -8,5 +8,6 @@ public enum FoodType{
     MEAT,
     GRASS,
     VEGETABLES,
-    FRUIT
+    FRUIT,
+    FISH
 }
