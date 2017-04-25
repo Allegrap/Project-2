@@ -17,6 +17,12 @@ public class Zoo {
 
     public Zoo(int entryFee, ArrayList<Enclosure> enclosures, ArrayList<Visitor> customers){
         this.entryFee = entryFee;
+        this.enclosures = enclosures;
+        this.visitors = customers;
+    }
+
+    public Zoo(int entryFee) {
+        this.entryFee = entryFee;
         this.enclosures = new ArrayList<Enclosure>();
         this.visitors = new ArrayList<Visitor>();
     }
