@@ -9,11 +9,11 @@ import java.util.ArrayList;
 public class Zoo {
 
     protected ArrayList<Enclosure> enclosures;
-    protected ArrayList<Customer> customers;
+    protected ArrayList<Visitor> visitors;
 
-    public Zoo(ArrayList<Enclosure> enclosures, ArrayList<Customer> customers){
+    public Zoo(ArrayList<Enclosure> enclosures, ArrayList<Visitor> customers){
         this.enclosures = new ArrayList<Enclosure>();
-        this.customers = new ArrayList<Customer>();
+        this.visitors = new ArrayList<Visitor>();
     }
 
 }
