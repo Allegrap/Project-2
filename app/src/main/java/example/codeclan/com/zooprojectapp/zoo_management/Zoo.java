@@ -12,8 +12,8 @@ import example.codeclan.com.zooprojectapp.zoo_management.Visitor;
 public class Zoo {
 
     private int entryFee;
-    protected ArrayList<Enclosure> enclosures;
-    protected ArrayList<Visitor> visitors;
+    private ArrayList<Enclosure> enclosures;
+    private ArrayList<Visitor> visitors;
 
     public Zoo(int entryFee, ArrayList<Enclosure> enclosures, ArrayList<Visitor> customers){
         this.entryFee = entryFee;
