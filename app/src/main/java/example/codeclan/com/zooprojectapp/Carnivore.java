@@ -9,4 +9,12 @@ public class Carnivore extends Animal {
     public Carnivore(String name, String type, char gender, String maturity){
         super(name, type, gender, maturity);
     }
+
+    @Override
+    public void eat(Edible food){
+        if(food.getFoodType() == FoodType.MEAT){
+            belly.add(food);
+        }
+        return;
+    }
 }
