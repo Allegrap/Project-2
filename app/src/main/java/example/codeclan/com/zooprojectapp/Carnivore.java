@@ -18,6 +18,9 @@ public class Carnivore extends Animal {
         else if(food.getFoodType() == FoodType.GRASS){
             belly.add(food);
         }
+        else if(food.getFoodType() == FoodType.FISH){
+            belly.add(food);
+        }
         return;
     }
 }
