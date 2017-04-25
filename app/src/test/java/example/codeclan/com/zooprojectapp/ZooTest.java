@@ -18,7 +18,7 @@ import static junit.framework.Assert.assertEquals;
 public class ZooTest {
 
     Zoo zoo;
-    Enclosure enclosure;
+    Enclosure enclosure1;
     Herbivore herbivore;
     Carnivore carnivore;
     Visitor visitor;
@@ -27,7 +27,7 @@ public class ZooTest {
     @Before
     public void before(){
         zoo = new Zoo(20);
-        enclosure = new Enclosure();
+        enclosure1 = new Enclosure();
         herbivore = new Herbivore("Bertie", "rhino", 'm', "adult");
         carnivore = new Carnivore("Darren", "leopard", 'm', "baby");
         visitor = new Visitor("Allegra", 400);
@@ -44,6 +44,10 @@ public class ZooTest {
         assertEquals(0, zoo.enclosureCount());
     }
 
-
+    @Test
+    public void canAddEnclosureTest(){
+        zoo.addEnclosure(enclosure1);
+        assertEquals(1, zoo.enclosureCount());
+    }
 
 }
