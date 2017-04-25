@@ -53,4 +53,8 @@ public class Zoo {
     public int getTotalMoney() {
         return totalMoney;
     }
+
+    public void takeMoney(int entryFee){
+        totalMoney += entryFee;
+    }
 }
