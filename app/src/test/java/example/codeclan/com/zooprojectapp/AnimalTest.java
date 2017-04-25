@@ -5,6 +5,8 @@ import org.junit.Test;
 
 import example.codeclan.com.zooprojectapp.animals.Carnivore;
 import example.codeclan.com.zooprojectapp.animals.Herbivore;
+import example.codeclan.com.zooprojectapp.animals.Hippo;
+import example.codeclan.com.zooprojectapp.animals.Leopard;
 import example.codeclan.com.zooprojectapp.food_management.Food;
 import example.codeclan.com.zooprojectapp.food_management.FoodType;
 
@@ -16,16 +18,16 @@ import static junit.framework.Assert.assertEquals;
 
 public class AnimalTest {
 
-    Herbivore herbivore;
-    Carnivore carnivore;
+    Hippo hippo;
+    Leopard leopard;
     Food foodVeg;
     Food foodVeg2;
     Food foodMeat;
 
     @Before
     public void before(){
-        herbivore = new Herbivore("Bertie", "rhino", 'm', "adult");
-        carnivore = new Carnivore("Darren", "leopard", 'm', "baby");
+        hippo = new Hippo("Bertie", 'm', "adult");
+        leopard = new Leopard("Darren", 'm', "baby");
         foodVeg = new Food(FoodType.GRASS, 4);
         foodVeg2 = new Food(FoodType.VEGETABLES, 6);
         foodMeat = new Food(FoodType.MEAT, 9);
@@ -33,47 +35,43 @@ public class AnimalTest {
 
     @Test
     public void getNameTest(){
-        assertEquals("Bertie", herbivore.getName());
+        assertEquals("Bertie", hippo.getName());
     }
 
-    @Test
-    public void getTypeTest(){
-        assertEquals("leopard", carnivore.getType());
-    }
 
     @Test
     public void getGenderTest(){
-        assertEquals('m', herbivore.getGender());
+        assertEquals('m', hippo.getGender());
     }
 
     @Test
     public void getMaturityTest(){
-        assertEquals("adult", herbivore.getMaturity());
+        assertEquals("adult", hippo.getMaturity());
     }
 
     @Test
     public void canGetBellySizeTest(){
-        assertEquals(0, herbivore.getBellySize());
+        assertEquals(0, hippo.getBellySize());
     }
 
     @Test
     public void canEatTest(){
-        herbivore.eat(foodVeg);
-        assertEquals(1, herbivore.getBellySize());
+        hippo.eat(foodVeg);
+        assertEquals(1, hippo.getBellySize());
     }
 
     @Test
     public void bellyEmptiesAfterSleepTest(){
-        herbivore.eat(foodVeg);
-        herbivore.sleep();
-        assertEquals(0, herbivore.getBellySize());
+        hippo.eat(foodVeg);
+        hippo.sleep();
+        assertEquals(0, hippo.getBellySize());
     }
 
     @Test
     public void getNutritionalValueOfBellyTest(){
-        herbivore.eat(foodVeg);
-        herbivore.eat(foodVeg2);
-        assertEquals(10, herbivore.totalNutrition());
+        hippo.eat(foodVeg);
+        hippo.eat(foodVeg2);
+        assertEquals(10, hippo.totalNutrition());
     }
 
 }

@@ -9,5 +9,5 @@ public class Leopard extends Carnivore {
     public Leopard(String name, char gender, String maturity){
         super(name, gender, maturity);
     }
-    
+
 }
