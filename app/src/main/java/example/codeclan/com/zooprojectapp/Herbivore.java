@@ -22,6 +22,9 @@ public class Herbivore extends Animal {
         else if(food.getFoodType() == FoodType.VEGETABLES){
             belly.add(food);
         }
+        else if(food.getFoodType() == FoodType.FRUIT){
+            belly.add(food);
+        }
         return;
     }
 }
