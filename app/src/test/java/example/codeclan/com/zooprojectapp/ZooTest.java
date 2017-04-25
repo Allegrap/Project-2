@@ -50,4 +50,9 @@ public class ZooTest {
         assertEquals(1, zoo.enclosureCount());
     }
 
+    @Test
+    public void canCountVisitorsTest(){
+        assertEquals(0, zoo.visitorCount());
+    }
+
 }
