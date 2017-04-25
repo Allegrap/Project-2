@@ -14,4 +14,6 @@ public class Visitor {
         this.funds = funds;
     }
 
+    
+
 }
