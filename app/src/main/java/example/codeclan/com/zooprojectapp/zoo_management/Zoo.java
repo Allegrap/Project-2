@@ -12,7 +12,7 @@ import example.codeclan.com.zooprojectapp.zoo_management.Visitor;
 public class Zoo {
 
     private int entryFee;
-    private int totalMoney;
+    protected int totalMoney;
     private ArrayList<Enclosure> enclosures;
     private ArrayList<Visitor> visitors;
 
@@ -48,13 +48,12 @@ public class Zoo {
 
     public void addVisitor(Visitor visitor){
         visitors.add(visitor);
+        totalMoney += entryFee;
+        visitor.payEntryFee(entryFee);
     }
 
     public int getTotalMoney() {
         return totalMoney;
     }
 
-    public void takeMoney(int entryFee){
-        totalMoney += entryFee;
-    }
 }

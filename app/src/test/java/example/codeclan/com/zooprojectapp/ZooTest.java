@@ -59,6 +59,8 @@ public class ZooTest {
     public void canAddVisitorTest(){
         zoo.addVisitor(visitor1);
         assertEquals(1, zoo.visitorCount());
+        assertEquals(5020, zoo.getTotalMoney());
+        assertEquals(380, visitor1.getFunds());
     }
 
     @Test
@@ -66,10 +68,5 @@ public class ZooTest {
         assertEquals(5000, zoo.getTotalMoney());
     }
 
-    @Test
-    public void canTakeMoney(){
-        zoo.takeMoney(zoo.getEntryFee());
-        assertEquals(5020, zoo.getTotalMoney());
-    }
 
 }

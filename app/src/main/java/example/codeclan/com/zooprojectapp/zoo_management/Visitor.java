@@ -22,4 +22,8 @@ public class Visitor {
         return funds;
     }
 
+    public void payEntryFee(int entryFee){
+        funds -= entryFee;
+    }
+
 }

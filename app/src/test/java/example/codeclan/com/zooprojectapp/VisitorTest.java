@@ -35,8 +35,8 @@ public class VisitorTest {
 
     @Test
     public void canPayEntryFee(){
-        visitor.payEntryFee(20);
-        assertEquals(5020, zoo.getTotalMoney());
+        visitor.payEntryFee(zoo.getEntryFee());
+        assertEquals(380, visitor.getFunds());
     }
 
 }
