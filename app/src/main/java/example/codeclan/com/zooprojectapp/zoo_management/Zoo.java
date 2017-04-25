@@ -37,7 +37,7 @@ public class Zoo {
     public int visitorCount(){
         return visitors.size();
     }
-    
+
     public int strayCount(){
         return strays.size();
     }
@@ -54,6 +54,10 @@ public class Zoo {
 
     public int getTotalMoney() {
         return totalMoney;
+    }
+
+    public void acceptStray(Stray stray){
+        strays.add(stray);
     }
 
 }
