@@ -11,14 +11,12 @@ import example.codeclan.com.zooprojectapp.food_management.Edible;
 public abstract class Animal {
 
     private String name;
-    private String type;
     private char gender;
     private String maturity;
     protected ArrayList<Edible> belly;
 
-    public Animal(String name, String type, char gender, String maturity){
+    public Animal(String name, char gender, String maturity){
         this.name = name;
-        this.type = type;
         this.gender = gender;
         this.maturity = maturity;
         this.belly = new ArrayList<Edible>();
@@ -27,10 +25,6 @@ public abstract class Animal {
 
     public String getName() {
         return name;
-    }
-
-    public String getType() {
-        return type;
     }
 
     public char getGender() {

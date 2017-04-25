@@ -6,8 +6,8 @@ package example.codeclan.com.zooprojectapp.animals;
 
 public class Hippo extends Herbivore{
 
-    public Hippo(String name, String type, char gender, String maturity){
-        super(name, type, gender, maturity);
+    public Hippo(String name, char gender, String maturity){
+        super(name, gender, maturity);
     }
 
 }

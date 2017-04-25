@@ -9,8 +9,8 @@ import example.codeclan.com.zooprojectapp.food_management.FoodType;
 
 public abstract class Carnivore extends Animal {
 
-    public Carnivore(String name, String type, char gender, String maturity){
-        super(name, type, gender, maturity);
+    public Carnivore(String name, char gender, String maturity){
+        super(name, gender, maturity);
     }
 
     @Override
