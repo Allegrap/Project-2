@@ -21,4 +21,7 @@ public class Zoo {
         this.visitors = new ArrayList<Visitor>();
     }
 
+    public int getEntryFee() {
+        return entryFee;
+    }
 }
