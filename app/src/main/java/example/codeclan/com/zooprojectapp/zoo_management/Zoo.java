@@ -12,17 +12,20 @@ import example.codeclan.com.zooprojectapp.zoo_management.Visitor;
 public class Zoo {
 
     private int entryFee;
+    private int totalMoney;
     private ArrayList<Enclosure> enclosures;
     private ArrayList<Visitor> visitors;
 
-    public Zoo(int entryFee, ArrayList<Enclosure> enclosures, ArrayList<Visitor> customers){
+    public Zoo(int entryFee, int totalMoney, ArrayList<Enclosure> enclosures, ArrayList<Visitor> customers){
         this.entryFee = entryFee;
+        this.totalMoney = totalMoney;
         this.enclosures = enclosures;
         this.visitors = customers;
     }
 
-    public Zoo(int entryFee) {
+    public Zoo(int entryFee, int totalMoney) {
         this.entryFee = entryFee;
+        this.totalMoney = totalMoney;
         this.enclosures = new ArrayList<Enclosure>();
         this.visitors = new ArrayList<Visitor>();
     }

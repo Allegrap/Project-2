@@ -21,4 +21,5 @@ public class Visitor {
     public int getFunds() {
         return funds;
     }
+
 }
