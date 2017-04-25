@@ -35,6 +35,10 @@ public class Zoo {
         return enclosures.size();
     }
 
+    public int visitorCount(){
+        return visitors.size();
+    }
+
     public void addEnclosure(Enclosure enclosure){
         enclosures.add(enclosure);
     }
