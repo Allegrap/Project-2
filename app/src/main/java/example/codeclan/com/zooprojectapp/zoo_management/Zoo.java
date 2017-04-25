@@ -30,4 +30,8 @@ public class Zoo {
     public int getEntryFee() {
         return entryFee;
     }
+
+    public int enclosureCount(){
+        return enclosures.size();
+    }
 }
