@@ -29,31 +29,31 @@ public class CarnivoreTest {
     }
 
     @Test
-    public void canEatMeat(){
+    public void canEatMeatTest(){
         carnivore.eat(meat);
         assertEquals(1, carnivore.getBellySize());
     }
 
     @Test
-    public void canEatFish(){
+    public void canEatFishTest(){
         carnivore.eat(fish);
         assertEquals(1, carnivore.getBellySize());
     }
 
     @Test
-    public void canEatGrass(){
+    public void canEatGrassTest(){
         carnivore.eat(grass);
         assertEquals(1, carnivore.getBellySize());
     }
 
     @Test
-    public void cannotEatVegetables(){
+    public void cannotEatVegetablesTest(){
         carnivore.eat(vegetables);
         assertEquals(0, carnivore.getBellySize());
     }
 
     @Test
-    public void cannotEatFruit(){
+    public void cannotEatFruitTest(){
         carnivore.eat(fruit);
         assertEquals(0, carnivore.getBellySize());
     }

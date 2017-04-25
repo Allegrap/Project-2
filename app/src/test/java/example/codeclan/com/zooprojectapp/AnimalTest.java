@@ -47,7 +47,7 @@ public class AnimalTest {
     }
 
     @Test
-    public void canGetBellySize(){
+    public void canGetBellySizeTest(){
         assertEquals(0, herbivore.getBellySize());
     }
 

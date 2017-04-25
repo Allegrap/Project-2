@@ -27,25 +27,25 @@ public class HerbivoreTest {
     }
 
     @Test
-    public void canEatVegetables(){
+    public void canEatVegetablesTest(){
         herbivore.eat(vegetables);
         assertEquals(1, herbivore.getBellySize());
     }
 
     @Test
-    public void canEatGrass(){
+    public void canEatGrassTest(){
         herbivore.eat(vegetables);
         assertEquals(1, herbivore.getBellySize());
     }
 
     @Test
-    public void canEatFruit(){
+    public void canEatFruitTest(){
         herbivore.eat(fruit);
         assertEquals(1, herbivore.getBellySize());
     }
 
     @Test
-    public void cannotEatMeat(){
+    public void cannotEatMeatTest(){
         herbivore.eat(meat);
         assertEquals(0, herbivore.getBellySize());
     }
