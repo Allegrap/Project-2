@@ -25,5 +25,10 @@ public class VisitorTest {
         assertEquals("Allegra", visitor.getName());
     }
 
+    @Test
+    public void canGetFundsTest(){
+        assertEquals(400, visitor.getFunds());
+    }
+
 
 }
