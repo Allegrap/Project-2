@@ -15,7 +15,7 @@ public class Zoo {
     protected ArrayList<Enclosure> enclosures;
     protected ArrayList<Visitor> visitors;
 
-    public Zoo(int entryFee, <Enclosure> enclosures, ArrayList<Visitor> customers){
+    public Zoo(int entryFee, ArrayList<Enclosure> enclosures, ArrayList<Visitor> customers){
         this.entryFee = entryFee;
         this.enclosures = new ArrayList<Enclosure>();
         this.visitors = new ArrayList<Visitor>();

@@ -14,6 +14,8 @@ public class Visitor {
         this.funds = funds;
     }
 
-    
+    public String getName(){
+        return name;
+    }
 
 }
