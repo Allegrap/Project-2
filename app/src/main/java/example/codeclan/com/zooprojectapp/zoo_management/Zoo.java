@@ -56,8 +56,9 @@ public class Zoo {
         return totalMoney;
     }
 
-    public void acceptStray(Stray stray){
-        strays.add(stray);
-    }
+    //TRY TOMORROW
+//    public void acceptStray(Stray stray){
+//        strays.add(stray);
+//    }
 
 }
