@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import example.codeclan.com.zooprojectapp.animals.Carnivore;
+import example.codeclan.com.zooprojectapp.animals.Leopard;
 import example.codeclan.com.zooprojectapp.food_management.Food;
 import example.codeclan.com.zooprojectapp.food_management.FoodType;
 
@@ -15,7 +16,7 @@ import static junit.framework.Assert.assertEquals;
 
 public class CarnivoreTest {
 
-    Carnivore carnivore;
+    Leopard leopard;
     Food meat;
     Food vegetables;
     Food grass;
@@ -24,7 +25,7 @@ public class CarnivoreTest {
 
     @Before
     public void before(){
-        carnivore = new Carnivore("Angela", "lion", 'f', "adult");
+        leopard = new Leopard("Angela", 'f', "adult");
         meat = new Food(FoodType.MEAT, 9);
         fish = new Food(FoodType.FISH, 8);
         vegetables = new Food(FoodType.VEGETABLES, 4);
@@ -34,32 +35,32 @@ public class CarnivoreTest {
 
     @Test
     public void canEatMeatTest(){
-        carnivore.eat(meat);
-        assertEquals(1, carnivore.getBellySize());
+        leopard.eat(meat);
+        assertEquals(1, leopard.getBellySize());
     }
 
     @Test
     public void canEatFishTest(){
-        carnivore.eat(fish);
-        assertEquals(1, carnivore.getBellySize());
+        leopard.eat(fish);
+        assertEquals(1, leopard.getBellySize());
     }
 
     @Test
     public void canEatGrassTest(){
-        carnivore.eat(grass);
-        assertEquals(1, carnivore.getBellySize());
+        leopard.eat(grass);
+        assertEquals(1, leopard.getBellySize());
     }
 
     @Test
     public void cannotEatVegetablesTest(){
-        carnivore.eat(vegetables);
-        assertEquals(0, carnivore.getBellySize());
+        leopard.eat(vegetables);
+        assertEquals(0, leopard.getBellySize());
     }
 
     @Test
     public void cannotEatFruitTest(){
-        carnivore.eat(fruit);
-        assertEquals(0, carnivore.getBellySize());
+        leopard.eat(fruit);
+        assertEquals(0, leopard.getBellySize());
     }
 
 }
