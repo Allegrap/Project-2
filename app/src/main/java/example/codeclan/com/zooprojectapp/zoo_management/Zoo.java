@@ -49,4 +49,8 @@ public class Zoo {
     public void addVisitor(Visitor visitor){
         visitors.add(visitor);
     }
+
+    public int getTotalMoney() {
+        return totalMoney;
+    }
 }
