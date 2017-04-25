@@ -3,6 +3,10 @@ package example.codeclan.com.zooprojectapp;
 import org.junit.Before;
 import org.junit.Test;
 
+import example.codeclan.com.zooprojectapp.animals.Carnivore;
+import example.codeclan.com.zooprojectapp.food_management.Food;
+import example.codeclan.com.zooprojectapp.food_management.FoodType;
+
 import static junit.framework.Assert.assertEquals;
 
 /**

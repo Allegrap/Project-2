@@ -1,6 +1,9 @@
-package example.codeclan.com.zooprojectapp;
+package example.codeclan.com.zooprojectapp.zoo_management;
 
 import java.util.ArrayList;
+
+import example.codeclan.com.zooprojectapp.zoo_management.Enclosure;
+import example.codeclan.com.zooprojectapp.zoo_management.Visitor;
 
 /**
  * Created by user on 25/04/2017.
