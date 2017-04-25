@@ -2,6 +2,7 @@ package example.codeclan.com.zooprojectapp.zoo_management;
 
 import java.util.ArrayList;
 
+import example.codeclan.com.zooprojectapp.food_management.Stray;
 import example.codeclan.com.zooprojectapp.zoo_management.Enclosure;
 import example.codeclan.com.zooprojectapp.zoo_management.Visitor;
 
@@ -15,19 +16,14 @@ public class Zoo {
     protected int totalMoney;
     private ArrayList<Enclosure> enclosures;
     private ArrayList<Visitor> visitors;
-
-    public Zoo(int entryFee, int totalMoney, ArrayList<Enclosure> enclosures, ArrayList<Visitor> customers){
-        this.entryFee = entryFee;
-        this.totalMoney = totalMoney;
-        this.enclosures = enclosures;
-        this.visitors = customers;
-    }
+    private ArrayList<Stray> strays;
 
     public Zoo(int entryFee, int totalMoney) {
         this.entryFee = entryFee;
         this.totalMoney = totalMoney;
         this.enclosures = new ArrayList<Enclosure>();
         this.visitors = new ArrayList<Visitor>();
+        this.strays = new ArrayList<Stray>();
     }
 
     public int getEntryFee() {
