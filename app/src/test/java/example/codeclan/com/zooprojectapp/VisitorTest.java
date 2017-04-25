@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import example.codeclan.com.zooprojectapp.zoo_management.Visitor;
+import example.codeclan.com.zooprojectapp.zoo_management.Zoo;
 
 import static junit.framework.Assert.assertEquals;
 
@@ -14,10 +15,12 @@ import static junit.framework.Assert.assertEquals;
 public class VisitorTest {
 
     Visitor visitor;
+    Zoo zoo;
 
     @Before
     public void before(){
         visitor = new Visitor("Allegra", 400);
+        zoo = new Zoo(20, 5000);
     }
 
     @Test
@@ -30,5 +33,10 @@ public class VisitorTest {
         assertEquals(400, visitor.getFunds());
     }
 
+    @Test
+    public void canPayEntryFee(){
+        visitor.payEntryFee(20);
+        assertEquals(5020, zoo.getTotalMoney());
+    }
 
 }
