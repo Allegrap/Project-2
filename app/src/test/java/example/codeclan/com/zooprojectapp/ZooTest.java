@@ -8,6 +8,8 @@ import example.codeclan.com.zooprojectapp.animals.Herbivore;
 import example.codeclan.com.zooprojectapp.zoo_management.Visitor;
 import example.codeclan.com.zooprojectapp.zoo_management.Zoo;
 
+import static junit.framework.Assert.assertEquals;
+
 /**
  * Created by user on 25/04/2017.
  */
@@ -29,7 +31,10 @@ public class ZooTest {
         visitor2 = new Visitor("Chiara", 10);
     }
 
-    
+    @Test
+    public void canGetEntryFeeTest(){
+        assertEquals(20, zoo.getEntryFee());
+    }
 
 
 
