@@ -21,7 +21,7 @@ public class ZooTest {
     Enclosure enclosure1;
     Herbivore herbivore;
     Carnivore carnivore;
-    Visitor visitor;
+    Visitor visitor1;
     Visitor visitor2;
 
     @Before
@@ -30,7 +30,7 @@ public class ZooTest {
         enclosure1 = new Enclosure();
         herbivore = new Herbivore("Bertie", "rhino", 'm', "adult");
         carnivore = new Carnivore("Darren", "leopard", 'm', "baby");
-        visitor = new Visitor("Allegra", 400);
+        visitor1 = new Visitor("Allegra", 400);
         visitor2 = new Visitor("Chiara", 10);
     }
 
@@ -53,6 +53,12 @@ public class ZooTest {
     @Test
     public void canCountVisitorsTest(){
         assertEquals(0, zoo.visitorCount());
+    }
+
+    @Test
+    public void canAddVisitorTest(){
+        zoo.addVisitor(visitor1);
+        assertEquals(1, zoo.visitorCount());
     }
 
 }
