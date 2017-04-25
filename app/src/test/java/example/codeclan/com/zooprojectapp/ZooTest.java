@@ -5,6 +5,8 @@ import org.junit.Test;
 
 import example.codeclan.com.zooprojectapp.animals.Carnivore;
 import example.codeclan.com.zooprojectapp.animals.Herbivore;
+import example.codeclan.com.zooprojectapp.animals.Hippo;
+import example.codeclan.com.zooprojectapp.animals.Leopard;
 import example.codeclan.com.zooprojectapp.zoo_management.Enclosure;
 import example.codeclan.com.zooprojectapp.zoo_management.Visitor;
 import example.codeclan.com.zooprojectapp.zoo_management.Zoo;
@@ -19,8 +21,8 @@ public class ZooTest {
 
     Zoo zoo;
     Enclosure enclosure1;
-    Herbivore herbivore;
-    Carnivore carnivore;
+    Hippo hippo;
+    Leopard leopard;
     Visitor visitor1;
     Visitor visitor2;
 
@@ -28,8 +30,8 @@ public class ZooTest {
     public void before(){
         zoo = new Zoo(20, 5000);
         enclosure1 = new Enclosure();
-        herbivore = new Herbivore("Bertie", "rhino", 'm', "adult");
-        carnivore = new Carnivore("Darren", "leopard", 'm', "baby");
+        hippo = new Hippo("Bertie", 'm', "adult");
+        leopard = new Leopard("Darren", 'm', "baby");
         visitor1 = new Visitor("Allegra", 400);
         visitor2 = new Visitor("Chiara", 10);
     }
