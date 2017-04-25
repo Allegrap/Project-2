@@ -42,4 +42,8 @@ public class Zoo {
     public void addEnclosure(Enclosure enclosure){
         enclosures.add(enclosure);
     }
+
+    public void addVisitor(Visitor visitor){
+        visitors.add(visitor);
+    }
 }
