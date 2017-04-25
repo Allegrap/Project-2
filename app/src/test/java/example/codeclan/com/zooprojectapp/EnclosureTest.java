@@ -5,6 +5,8 @@ import org.junit.Test;
 
 import example.codeclan.com.zooprojectapp.animals.Carnivore;
 import example.codeclan.com.zooprojectapp.animals.Herbivore;
+import example.codeclan.com.zooprojectapp.animals.Hippo;
+import example.codeclan.com.zooprojectapp.animals.Leopard;
 import example.codeclan.com.zooprojectapp.food_management.Food;
 import example.codeclan.com.zooprojectapp.food_management.FoodType;
 import example.codeclan.com.zooprojectapp.zoo_management.Enclosure;
@@ -18,35 +20,35 @@ import static junit.framework.Assert.assertEquals;
 public class EnclosureTest {
 
     Enclosure enclosure;
-    Herbivore herbivore;
-    Carnivore carnivore;
+    Hippo hippo;
+    Leopard leopard;
 
     @Before
     public void before(){
         enclosure = new Enclosure();
-        herbivore = new Herbivore("Bertie", "rhino", 'm', "adult");
-        carnivore = new Carnivore("Darren", "leopard", 'm', "baby");
+        hippo = new Hippo("Bertie", 'm', "adult");
+        leopard = new Leopard("Darren", 'm', "baby");
     }
 
     @Test
     public void addAnimalTest(){
-        enclosure.addAnimal(herbivore);
+        enclosure.addAnimal(hippo);
         assertEquals(1, enclosure.numberOfAnimals());
     }
 
     @Test
     public void getAnimalsListTest(){
-        enclosure.addAnimal(herbivore);
-        enclosure.addAnimal(carnivore);
+        enclosure.addAnimal(hippo);
+        enclosure.addAnimal(leopard);
         assertEquals(2, enclosure.getAnimals().size());
     }
 
     @Test
     public void canFeedAnimalsTest(){
-        enclosure.addAnimal(herbivore);
+        enclosure.addAnimal(hippo);
         Food food = new Food(FoodType.VEGETABLES, 5);
-        enclosure.feedAnimal(herbivore, food);
-        assertEquals(1, herbivore.getBellySize());
+        enclosure.feedAnimal(hippo, food);
+        assertEquals(1, hippo.getBellySize());
     }
 
 }
