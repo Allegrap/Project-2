@@ -5,4 +5,13 @@ package example.codeclan.com.zooprojectapp.zoo_management;
  */
 
 public class Visitor {
+
+    private String name;
+    private int funds;
+
+    public Visitor(String name, int funds){
+        this.name = name;
+        this.funds = funds;
+    }
+
 }
