@@ -18,4 +18,7 @@ public class Visitor {
         return name;
     }
 
+    public int getFunds() {
+        return funds;
+    }
 }
