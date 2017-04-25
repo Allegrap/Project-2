@@ -5,6 +5,8 @@ import org.junit.Test;
 
 import example.codeclan.com.zooprojectapp.animals.Hippo;
 import example.codeclan.com.zooprojectapp.animals.Leopard;
+import example.codeclan.com.zooprojectapp.food_management.FoodType;
+import example.codeclan.com.zooprojectapp.food_management.Stray;
 import example.codeclan.com.zooprojectapp.zoo_management.Enclosure;
 import example.codeclan.com.zooprojectapp.zoo_management.Visitor;
 import example.codeclan.com.zooprojectapp.zoo_management.Zoo;
@@ -23,6 +25,7 @@ public class ZooTest {
     Leopard leopard;
     Visitor visitor1;
     Visitor visitor2;
+    Stray stray;
 
     @Before
     public void before(){
@@ -32,6 +35,7 @@ public class ZooTest {
         leopard = new Leopard("Darren", 'm', "baby");
         visitor1 = new Visitor("Allegra", 400);
         visitor2 = new Visitor("Chiara", 10);
+        stray = new Stray("dog", FoodType.MEAT, 30);
     }
 
     @Test
@@ -68,5 +72,10 @@ public class ZooTest {
         assertEquals(5000, zoo.getTotalMoney());
     }
 
+    @Test
+    public void canAcceptStray(){
+        zoo.acceptStray(stray);
+        assertEquals(1, zoo.countStrays());
+    }
 
 }
