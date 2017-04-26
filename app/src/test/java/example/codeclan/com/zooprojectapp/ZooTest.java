@@ -32,6 +32,7 @@ public class ZooTest {
 
     @Before
     public void before(){
+        stray = new Stray("dog", FoodType.MEAT, 30);
         ArrayList<Stray> list = new ArrayList<Stray>();
         list.add(stray);
 
@@ -41,8 +42,6 @@ public class ZooTest {
         leopard = new Leopard("Darren", 'm', "baby");
         visitor1 = new Visitor("Allegra", 400);
         visitor2 = new Visitor("Chiara", 10, list);
-        stray = new Stray("dog", FoodType.MEAT, 30);
-
     }
 
     @Test
@@ -85,11 +84,5 @@ public class ZooTest {
         zoo.acceptStray(donatedStray);
     }
 
-//  TRY TOMORROW
-//    @Test
-//    public void canAcceptStray(){
-//        zoo.acceptStray(stray);
-//        assertEquals(1, zoo.strayCount());
-//    }
 
 }
