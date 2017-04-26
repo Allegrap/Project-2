@@ -13,11 +13,13 @@ import example.codeclan.com.zooprojectapp.animals.Animal;
 public class Enclosure {
 
     private String name;
+    private String biome;
     private ArrayList<Animal> animals;
     private ArrayList<Food> food;
 
-    public Enclosure(String name){
+    public Enclosure(String name, String biome){
         this.name = name;
+        this.biome = biome;
         this.animals = new ArrayList<Animal>();
         this.food = new ArrayList<Food>();
     }
