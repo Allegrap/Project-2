@@ -100,5 +100,10 @@ public class ZooTest {
         assertEquals(1, zoo.strayCount());
     }
 
+    @Test
+    public void canGetEnclosures(){
+        assertEquals();
+    }
+
 
 }

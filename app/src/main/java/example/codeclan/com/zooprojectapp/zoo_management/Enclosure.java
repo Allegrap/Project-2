@@ -12,10 +12,12 @@ import example.codeclan.com.zooprojectapp.animals.Animal;
 
 public class Enclosure {
 
+    private String name;
     private ArrayList<Animal> animals;
     private ArrayList<Food> food;
 
-    public Enclosure(){
+    public Enclosure(String name){
+        this.name = name;
         this.animals = new ArrayList<Animal>();
         this.food = new ArrayList<Food>();
     }
