@@ -46,6 +46,14 @@ public class Zoo {
         return message;
     }
 
+    public String getVisitors(){
+        String message = "";
+        for (Visitor visitor : visitors){
+            message = message + visitor.getName();
+        }
+        return message;
+    }
+
     public int enclosureCount(){
         return enclosures.size();
     }
