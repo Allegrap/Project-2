@@ -37,6 +37,10 @@ public class Visitor {
         name = newName;
     }
 
+    public void setFunds(int newFunds){
+        funds= newFunds;
+    }
+
     public void payEntryFee(int entryFee){
         funds -= entryFee;
     }

@@ -51,6 +51,12 @@ public class VisitorTest {
     }
 
     @Test
+    public void setFundsTest(){
+        visitor.setFunds(300);
+        assertEquals(300, visitor.getFunds());
+    }
+
+    @Test
     public void payEntryFeeTest(){
         visitor.payEntryFee(zoo.getEntryFee());
         assertEquals(380, visitor.getFunds());
