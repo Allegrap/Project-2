@@ -79,9 +79,8 @@ public class ZooTest {
     }
 
     @Test
-    public void canAcceptStray(){
-        Stray donatedStray = visitor1.donateStray();
-        zoo.acceptStray(donatedStray);
+    public void canCountStraysTest(){
+        assertEquals(0, zoo.strayCount());
     }
 
 

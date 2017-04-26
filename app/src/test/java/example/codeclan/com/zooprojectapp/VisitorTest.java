@@ -22,7 +22,7 @@ public class VisitorTest {
 
     @Before
     public void before(){
-        visitor = new Visitor("Allegra", 400, false);
+        visitor = new Visitor("Allegra", 400);
         zoo = new Zoo(20, 5000);
         stray = new Stray("dog", FoodType.MEAT, 30);
     }
