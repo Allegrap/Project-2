@@ -18,17 +18,17 @@ public class AnimalTest {
 
     Hippo hippo;
     Leopard leopard;
-    Food foodVeg;
-    Food foodVeg2;
-    Food foodMeat;
+    Food grass;
+    Food vegetables;
+    Food meat;
 
     @Before
     public void before(){
         hippo = new Hippo("Bertie", 'm', "adult");
         leopard = new Leopard("Darren", 'm', "baby");
-        foodVeg = new Food(FoodType.GRASS, 4);
-        foodVeg2 = new Food(FoodType.VEGETABLES, 6);
-        foodMeat = new Food(FoodType.MEAT, 9);
+        grass = new Food(FoodType.GRASS, 4);
+        vegetables = new Food(FoodType.VEGETABLES, 6);
+        meat = new Food(FoodType.MEAT, 9);
     }
 
     @Test
@@ -54,21 +54,21 @@ public class AnimalTest {
 
     @Test
     public void canEatTest(){
-        hippo.eat(foodVeg);
+        hippo.eat(grass);
         assertEquals(1, hippo.getBellySize());
     }
 
     @Test
     public void bellyEmptiesAfterSleepTest(){
-        hippo.eat(foodVeg);
+        hippo.eat(grass);
         hippo.sleep();
         assertEquals(0, hippo.getBellySize());
     }
 
     @Test
     public void getNutritionalValueOfBellyTest(){
-        hippo.eat(foodVeg);
-        hippo.eat(foodVeg2);
+        hippo.eat(grass);
+        hippo.eat(vegetables);
         assertEquals(10, hippo.totalNutrition());
     }
 

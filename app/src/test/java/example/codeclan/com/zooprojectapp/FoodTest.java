@@ -14,21 +14,21 @@ import static junit.framework.Assert.assertEquals;
 
 public class FoodTest {
 
-    Food food;
+    Food meat;
 
     @Before
     public void before(){
-        food = new Food(FoodType.MEAT, 9);
+        meat = new Food(FoodType.MEAT, 9);
     }
 
     @Test
     public void canGetFoodTypeTest(){
-        assertEquals(FoodType.MEAT, food.getFoodType());
+        assertEquals(FoodType.MEAT, meat.getFoodType());
     }
 
     @Test
     public void canGetNutritionalValueTest(){
-        assertEquals(9, food.getNutritionalValue());
+        assertEquals(9, meat.getNutritionalValue());
     }
 
 }
