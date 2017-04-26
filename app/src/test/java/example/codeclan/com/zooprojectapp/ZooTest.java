@@ -100,11 +100,11 @@ public class ZooTest {
         assertEquals(1, zoo.strayCount());
     }
 
-//    @Test
-//    public void canGetEnclosures(){
-//        zoo.addEnclosure(enclosure1);
-//        assertEquals("Africa", zoo.getEnclosures());
-//    }
+    @Test
+    public void canGetEnclosures(){
+        zoo.addEnclosure(enclosure1);
+        assertEquals("Africa", zoo.getEnclosures());
+    }
 
 
 }

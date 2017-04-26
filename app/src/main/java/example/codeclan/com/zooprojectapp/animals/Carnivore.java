@@ -17,15 +17,19 @@ public abstract class Carnivore extends Animal {
     public void eat(Edible food){
         if(food.getFoodType() == FoodType.MEAT){
             belly.add(food);
+            hunger -= food.getNutritionalValue();
         }
         else if(food.getFoodType() == FoodType.GRASS){
             belly.add(food);
+            hunger -= food.getNutritionalValue();
         }
         else if(food.getFoodType() == FoodType.FISH){
             belly.add(food);
+            hunger -= food.getNutritionalValue();
         }
         else if(food.getFoodType() == FoodType.INSECTS){
             belly.add(food);
+            hunger -= food.getNutritionalValue();
         }
         return;
     }

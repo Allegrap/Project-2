@@ -14,7 +14,7 @@ public abstract class Animal {
     private char gender;
     private String maturity;
     private String biome;
-    private int hunger;
+    protected int hunger;
     protected ArrayList<Edible> belly;
     private int price;
 
@@ -49,10 +49,13 @@ public abstract class Animal {
         return biome;
     }
 
+    public int getHunger() { return hunger; }
+
     public int getBellySize() { return belly.size(); }
 
     public void eat(Edible edible){
         belly.add(edible);
+        hunger -= edible.getNutritionalValue();
     }
 
     public void sleep(){
@@ -71,8 +74,4 @@ public abstract class Animal {
         return "I am playing!";
     }
 
-
-    public int getHunger() {
-        return hunger;
-    }
 }

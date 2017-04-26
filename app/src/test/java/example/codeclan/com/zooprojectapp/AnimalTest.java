@@ -71,6 +71,7 @@ public class AnimalTest {
     public void canEatTest(){
         hippo.eat(grass);
         assertEquals(1, hippo.getBellySize());
+        assertEquals(96, hippo.getHunger());
     }
 
     @Test

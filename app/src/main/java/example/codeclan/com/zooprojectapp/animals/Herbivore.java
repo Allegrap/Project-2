@@ -19,12 +19,15 @@ public abstract class Herbivore extends Animal {
     public void eat(Edible food){
         if(food.getFoodType() == FoodType.GRASS){
             belly.add(food);
+            hunger -= food.getNutritionalValue();
         }
         else if(food.getFoodType() == FoodType.VEGETABLES){
             belly.add(food);
+            hunger -= food.getNutritionalValue();
         }
         else if(food.getFoodType() == FoodType.FRUIT){
             belly.add(food);
+            hunger -= food.getNutritionalValue();
         }
         return;
     }

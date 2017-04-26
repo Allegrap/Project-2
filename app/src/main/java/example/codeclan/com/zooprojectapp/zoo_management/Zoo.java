@@ -65,10 +65,12 @@ public class Zoo {
         strays.add(stray);
     }
 
-//    public String getEnclosures(){
-//        for(enclosure : enclosures){
-//            System.out.println(enclosure.name);
-//        }
-//    }
+    public String getEnclosures(){
+        String message = "";
+        for(Enclosure enclosure : enclosures){
+            message = message + enclosure.getName();
+        }
+        return message;
+    }
 
 }

@@ -36,6 +36,11 @@ public class Enclosure {
         if(biome == animal.getBiome()) {
             animals.add(animal);
         }
+
+    }
+
+    public String getName(){
+        return name;
     }
 
     public void addFood(Food foods){
