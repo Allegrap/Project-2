@@ -36,6 +36,11 @@ public class EnclosureTest {
     }
 
     @Test
+    public void canGetName(){
+        assertEquals("Africa", enclosure.getName());
+    }
+
+    @Test
     public void canCountAnimals(){
         assertEquals(0, enclosure.numberOfAnimals());
     }
