@@ -10,10 +10,12 @@ public class Food implements Edible {
 
     private FoodType foodType;
     private int nutritionalValue;
+    private int price;
 
-    public Food(FoodType foodType, int nutritionValue){
+    public Food(FoodType foodType, int nutritionValue, int price){
         this.foodType = foodType;
         this.nutritionalValue = nutritionValue;
+        this.price = price;
     }
 
     public int getNutritionalValue(){
