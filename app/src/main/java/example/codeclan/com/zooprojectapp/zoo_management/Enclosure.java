@@ -24,6 +24,10 @@ public class Enclosure {
         return animals.size();
     }
 
+    public int numberOfFood() {
+        return food.size();
+    }
+
     public void addAnimal(Animal animal){
         animals.add(animal);
     }

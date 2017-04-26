@@ -52,7 +52,7 @@ public class EnclosureTest {
 
     @Test
     public void canCountFood(){
-        assertEquals(0, enclosure.numberofFood());
+        assertEquals(0, enclosure.numberOfFood());
     }
 
     @Test
