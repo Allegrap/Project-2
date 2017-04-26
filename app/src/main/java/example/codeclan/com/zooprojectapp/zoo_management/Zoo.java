@@ -48,8 +48,11 @@ public class Zoo {
         enclosures.add(enclosure);
     }
 
-    public void addVisitor(Visitor visitor){
-        visitors.add(visitor);
+    public void addVisitor(Visitor visitor) {
+        if (visitorCount() < capacity) {
+            visitors.add(visitor);
+        }
+
         totalMoney += entryFee;
         visitor.payEntryFee(entryFee);
     }

@@ -36,7 +36,7 @@ public class ZooTest {
         ArrayList<Stray> list = new ArrayList<Stray>();
         list.add(stray);
 
-        zoo = new Zoo(20, 5000);
+        zoo = new Zoo(20, 5000, 2);
         enclosure1 = new Enclosure();
         hippo = new Hippo("Bertie", 'm', "adult");
         leopard = new Leopard("Darren", 'm', "baby");
