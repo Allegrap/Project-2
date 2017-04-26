@@ -36,6 +36,8 @@ public class Zoo {
         return totalMoney;
     }
 
+    public int getCapacity() { return capacity; }
+
     public String getEnclosures(){
         String message = "";
         for(Enclosure enclosure : enclosures){
@@ -72,5 +74,4 @@ public class Zoo {
     public void acceptStray(Stray stray){
         strays.add(stray);
     }
-
 }
