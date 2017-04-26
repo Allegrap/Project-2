@@ -39,4 +39,28 @@ public class OmnivoreTest {
         assertEquals(1, beardedDragon.getBellySize());
     }
 
+    @Test
+    public void canEatGrassTest(){
+        beardedDragon.eat(grass);
+        assertEquals(1, beardedDragon.getBellySize());
+    }
+
+    @Test
+    public void cannotEatFruitTest(){
+        beardedDragon.eat(fruit);
+        assertEquals(0, beardedDragon.getBellySize());
+    }
+
+    @Test
+    public void cannotEatFishTest(){
+        beardedDragon.eat(fish);
+        assertEquals(0, beardedDragon.getBellySize());
+    }
+
+    @Test
+    public void cannotEatMeatTest(){
+        beardedDragon.eat(meat);
+        assertEquals(0, beardedDragon.getBellySize());
+    }
+
 }
