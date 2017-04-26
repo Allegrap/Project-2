@@ -41,6 +41,11 @@ public class EnclosureTest {
     }
 
     @Test
+    public void canGetBiome(){
+        assertEquals("grassland", enclosure.getBiome());
+    }
+
+    @Test
     public void canCountAnimals(){
         assertEquals(0, enclosure.numberOfAnimals());
     }

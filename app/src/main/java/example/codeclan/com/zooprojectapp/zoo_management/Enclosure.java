@@ -61,4 +61,8 @@ public class Enclosure {
             }
         }
     }
+
+    public String getBiome() {
+        return biome;
+    }
 }
