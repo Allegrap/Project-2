@@ -51,6 +51,11 @@ public class EnclosureTest {
     }
 
     @Test
+    public void canCountFood(){
+        assertEquals(0, enclosure.numberofFood());
+    }
+
+    @Test
     public void canFeedAnimalsTest(){
         enclosure.addAnimal(hippo);
         Food food = new Food(FoodType.VEGETABLES, 5);
