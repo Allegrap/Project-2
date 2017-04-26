@@ -66,6 +66,12 @@ public class EnclosureTest {
     }
 
     @Test
+    public void setBiomeTest(){
+        enclosure.setBiome("savannah");
+        assertEquals("savannah", enclosure.getBiome());
+    }
+
+    @Test
     public void countAnimalsTest(){
         assertEquals(0, enclosure.numberOfAnimals());
     }

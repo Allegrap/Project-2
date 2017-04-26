@@ -40,6 +40,10 @@ public class Enclosure {
         name = newName;
     }
 
+    public void setBiome(String newBiome){
+        biome = newBiome;
+    }
+
     public int numberOfAnimals() {
         return animals.size();
     }
