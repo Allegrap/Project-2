@@ -40,6 +40,10 @@ public class Enclosure {
         return new ArrayList<Animal>(animals);
     }
 
+    public ArrayList<Food> getFood(){
+        return new ArrayList<Food>(food);
+    }
+
     public void feedAnimal(Animal animalToFeed, Edible edible){
 
         for(Animal animal : animals){
