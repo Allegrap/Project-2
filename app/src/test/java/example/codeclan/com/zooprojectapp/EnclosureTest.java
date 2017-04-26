@@ -54,6 +54,13 @@ public class EnclosureTest {
     }
 
     @Test
+    public void cannotAddAnimalWithDifferentBiomeTest(){
+        enclosure.addAnimal(hippo);
+        enclosure.addAnimal(leopard);
+        assertEquals(1, enclosure.getAnimals().size());
+    }
+
+    @Test
     public void canCountFood(){
         assertEquals(0, enclosure.numberOfFood());
     }
