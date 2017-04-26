@@ -53,6 +53,8 @@ public abstract class Animal {
 
     public int getBellySize() { return belly.size(); }
 
+    public void setName(String newName){ name = newName; }
+
     public void eat(Edible edible){
         belly.add(edible);
         hunger -= edible.getNutritionalValue();
