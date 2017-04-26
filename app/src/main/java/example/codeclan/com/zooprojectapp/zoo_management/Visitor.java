@@ -37,6 +37,9 @@ public class Visitor {
         funds -= entryFee;
     }
 
+    public int strayCount(){
+        return strays.size();
+    }
 
     public Stray donateStray(){
         Stray donatedStray = strays.get(0);

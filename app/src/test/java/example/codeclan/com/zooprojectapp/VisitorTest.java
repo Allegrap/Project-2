@@ -50,7 +50,7 @@ public class VisitorTest {
 
     @Test
     public void canCountStrays(){
-        assertEquals(0, visitor.strayCount());
+        assertEquals(1, visitor.strayCount());
     }
 
 //    @Test
