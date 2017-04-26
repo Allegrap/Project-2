@@ -8,8 +8,8 @@ import example.codeclan.com.zooprojectapp.Interfaces.Swimmable;
 
 public class Hippo extends Herbivore implements Swimmable{
 
-    public Hippo(String name, char gender, String maturity, int price){
-        super(name, gender, maturity, price);
+    public Hippo(String name, char gender, String maturity, String biome, int price){
+        super(name, gender, maturity, biome, price);
     }
 
     public String swim(){

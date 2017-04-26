@@ -10,8 +10,8 @@ import example.codeclan.com.zooprojectapp.food_management.FoodType;
 
 public class BeardedDragon extends Omnivore implements Climbable {
 
-    public BeardedDragon(String name, char gender, String maturity, int price){
-        super(name, gender, maturity, price);
+    public BeardedDragon(String name, char gender, String maturity, String biome, int price){
+        super(name, gender, maturity, biome, price);
     }
 
     public String climb(){

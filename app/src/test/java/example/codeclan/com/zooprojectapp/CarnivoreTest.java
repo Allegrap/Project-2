@@ -25,7 +25,7 @@ public class CarnivoreTest {
 
     @Before
     public void before(){
-        leopard = new Leopard("Angela", 'f', "adult", 700);
+        leopard = new Leopard("Angela", 'f', "adult", "rainforest", 700);
         meat = new Food(FoodType.MEAT, 9, 20);
         fish = new Food(FoodType.FISH, 8, 15);
         vegetables = new Food(FoodType.VEGETABLES, 4, 10);

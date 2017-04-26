@@ -26,8 +26,8 @@ public class EnclosureTest {
     @Before
     public void before(){
         enclosure = new Enclosure();
-        hippo = new Hippo("Bertie", 'm', "adult", 900);
-        leopard = new Leopard("Darren", 'm', "baby", 700);
+        hippo = new Hippo("Bertie", 'm', "adult", "grassland", 900);
+        leopard = new Leopard("Darren", 'm', "baby", "rainforest", 700);
         meat = new Food(FoodType.MEAT, 9, 20);
         vegetables = new Food(FoodType.VEGETABLES, 4, 10);
     }
