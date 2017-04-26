@@ -55,6 +55,8 @@ public abstract class Animal {
 
     public void setName(String newName){ name = newName; }
 
+    public void setGender(char newGender){ gender = newGender; }
+
     public void eat(Edible edible){
         belly.add(edible);
         hunger -= edible.getNutritionalValue();

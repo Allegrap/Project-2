@@ -74,6 +74,12 @@ public class AnimalTest {
     }
 
     @Test
+    public void setGenderTest(){
+        hippo.setGender('f');
+        assertEquals('f', hippo.getGender());
+    }
+
+    @Test
     public void canEatTest(){
         hippo.eat(grass);
         assertEquals(1, hippo.getBellySize());
