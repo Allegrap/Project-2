@@ -28,8 +28,8 @@ public class EnclosureTest {
         enclosure = new Enclosure();
         hippo = new Hippo("Bertie", 'm', "adult");
         leopard = new Leopard("Darren", 'm', "baby");
-        meat = new Food(FoodType.MEAT, 9);
-        vegetables = new Food(FoodType.VEGETABLES, 4);
+        meat = new Food(FoodType.MEAT, 9, 20);
+        vegetables = new Food(FoodType.VEGETABLES, 4, 10);
     }
 
     @Test
@@ -72,7 +72,7 @@ public class EnclosureTest {
     @Test
     public void canFeedAnimalsTest(){
         enclosure.addAnimal(hippo);
-        Food food = new Food(FoodType.VEGETABLES, 5);
+        Food food = new Food(FoodType.VEGETABLES, 5, 10);
         enclosure.feedAnimal(hippo, food);
         assertEquals(1, hippo.getBellySize());
     }

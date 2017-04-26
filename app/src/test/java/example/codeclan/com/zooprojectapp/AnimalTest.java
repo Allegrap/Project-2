@@ -26,9 +26,9 @@ public class AnimalTest {
     public void before(){
         hippo = new Hippo("Bertie", 'm', "adult");
         leopard = new Leopard("Darren", 'm', "baby");
-        grass = new Food(FoodType.GRASS, 4);
-        vegetables = new Food(FoodType.VEGETABLES, 6);
-        meat = new Food(FoodType.MEAT, 9);
+        grass = new Food(FoodType.GRASS, 4, 5);
+        vegetables = new Food(FoodType.VEGETABLES, 6, 10);
+        meat = new Food(FoodType.MEAT, 9, 20);
     }
 
     @Test

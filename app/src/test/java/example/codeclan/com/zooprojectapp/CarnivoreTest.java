@@ -26,12 +26,12 @@ public class CarnivoreTest {
     @Before
     public void before(){
         leopard = new Leopard("Angela", 'f', "adult");
-        meat = new Food(FoodType.MEAT, 9);
-        fish = new Food(FoodType.FISH, 8);
-        vegetables = new Food(FoodType.VEGETABLES, 4);
-        grass = new Food(FoodType.GRASS, 3);
-        fruit = new Food(FoodType.FRUIT, 5);
-        insects = new Food(FoodType.INSECTS, 2);
+        meat = new Food(FoodType.MEAT, 9, 20);
+        fish = new Food(FoodType.FISH, 8, 15);
+        vegetables = new Food(FoodType.VEGETABLES, 4, 10);
+        grass = new Food(FoodType.GRASS, 3, 5);
+        fruit = new Food(FoodType.FRUIT, 5, 6);
+        insects = new Food(FoodType.INSECTS, 2, 3);
     }
 
     @Test

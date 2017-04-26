@@ -18,7 +18,7 @@ public class FoodTest {
 
     @Before
     public void before(){
-        meat = new Food(FoodType.MEAT, 9);
+        meat = new Food(FoodType.MEAT, 9, 20);
     }
 
     @Test
@@ -30,5 +30,6 @@ public class FoodTest {
     public void canGetNutritionalValueTest(){
         assertEquals(9, meat.getNutritionalValue());
     }
+
 
 }
