@@ -48,6 +48,11 @@ public class AnimalTest {
     }
 
     @Test
+    public void getPriceTest(){
+        assertEquals(1000, hippo.getPrice());
+    }
+
+    @Test
     public void canGetBellySizeTest(){
         assertEquals(0, hippo.getBellySize());
     }
