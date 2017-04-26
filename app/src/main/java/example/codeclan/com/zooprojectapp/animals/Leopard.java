@@ -8,8 +8,8 @@ import example.codeclan.com.zooprojectapp.Interfaces.Climbable;
 
 public class Leopard extends Carnivore implements Climbable{
 
-    public Leopard(String name, char gender, String maturity, String biome, int price){
-        super(name, gender, maturity, biome, price);
+    public Leopard(String name, char gender, String maturity, String biome, int hunger, int price){
+        super(name, gender, maturity, biome, hunger, price);
     }
 
     public String climb(){

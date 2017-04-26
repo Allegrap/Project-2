@@ -10,8 +10,8 @@ import example.codeclan.com.zooprojectapp.food_management.FoodType;
 public abstract class Herbivore extends Animal {
 
 
-    public Herbivore(String name, char gender, String maturity, String biome, int price){
-        super(name, gender, maturity, biome, price);
+    public Herbivore(String name, char gender, String maturity, String biome, int hunger, int price){
+        super(name, gender, maturity, biome, hunger, price);
     }
 
 

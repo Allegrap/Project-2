@@ -6,8 +6,8 @@ package example.codeclan.com.zooprojectapp.animals;
 
 public class Omnivore extends Animal{
 
-    public Omnivore(String name, char gender, String maturity, String biome, int price){
-        super(name, gender, maturity, biome, price);
+    public Omnivore(String name, char gender, String maturity, String biome, int hunger, int price){
+        super(name, gender, maturity, biome, hunger, price);
     }
 
 }

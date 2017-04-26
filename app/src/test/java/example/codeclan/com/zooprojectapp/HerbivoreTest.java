@@ -23,7 +23,7 @@ public class HerbivoreTest {
 
     @Before
     public void before(){
-        hippo = new Hippo("Tony", 'm', "adult", "grassland", 900);
+        hippo = new Hippo("Tony", 'm', "adult", "grassland", 100, 900);
         meat = new Food(FoodType.MEAT, 9, 20);
         vegetables = new Food(FoodType.VEGETABLES, 4, 10);
         grass = new Food(FoodType.GRASS, 3, 5);

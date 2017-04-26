@@ -8,8 +8,8 @@ import example.codeclan.com.zooprojectapp.Interfaces.Scavengeable;
 
 public class Hyena extends Carnivore implements Scavengeable {
 
-    public Hyena(String name, char gender, String maturity, String biome, int price){
-        super(name, gender, maturity, biome, price);
+    public Hyena(String name, char gender, String maturity, String biome, int hunger, int price){
+        super(name, gender, maturity, biome, hunger, price);
     }
 
     public String scavenge(){
