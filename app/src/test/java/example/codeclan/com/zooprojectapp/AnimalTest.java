@@ -68,6 +68,12 @@ public class AnimalTest {
     }
 
     @Test
+    public void setNameTest(){
+        hippo.setName("Sheila");
+        assertEquals("Sheila", hippo. getName());
+    }
+
+    @Test
     public void canEatTest(){
         hippo.eat(grass);
         assertEquals(1, hippo.getBellySize());
