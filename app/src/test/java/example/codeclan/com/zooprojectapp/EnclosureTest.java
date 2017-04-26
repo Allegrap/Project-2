@@ -63,6 +63,13 @@ public class EnclosureTest {
     }
 
     @Test
+    public void getFoodListTest(){
+        enclosure.addFood(meat);
+        enclosure.addFood(vegetables);
+        assertEquals(2, enclosure.getFood().size());
+    }
+
+    @Test
     public void canFeedAnimalsTest(){
         enclosure.addAnimal(hippo);
         Food food = new Food(FoodType.VEGETABLES, 5);
