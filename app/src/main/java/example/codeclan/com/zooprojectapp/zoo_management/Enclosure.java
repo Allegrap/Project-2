@@ -36,6 +36,10 @@ public class Enclosure {
 
     public ArrayList<Food> getFood(){ return new ArrayList<Food>(food); }
 
+    public void setName(String newName){
+        name = newName;
+    }
+
     public int numberOfAnimals() {
         return animals.size();
     }

@@ -60,6 +60,12 @@ public class EnclosureTest {
     }
 
     @Test
+    public void setNameTest(){
+        enclosure.setName("jungle");
+        assertEquals("jungle", enclosure.getName());
+    }
+
+    @Test
     public void countAnimalsTest(){
         assertEquals(0, enclosure.numberOfAnimals());
     }
