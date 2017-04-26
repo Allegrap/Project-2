@@ -89,7 +89,7 @@ public class AnimalTest {
     }
 
     @Test
-    public void animalCanPlay(){
+    public void animalCanPlayTest(){
         assertEquals("I am playing!", hippo.play());
     }
 }

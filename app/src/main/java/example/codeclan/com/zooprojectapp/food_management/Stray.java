@@ -18,15 +18,17 @@ public class Stray implements Edible {
         this.nutritionalValue = nutritionValue;
     }
 
+    public String getType() {
+        return type;
+    }
+
+    public FoodType getFoodType() {
+        return foodType;
+    }
+
     public int getNutritionalValue(){
             return this.nutritionalValue;
         }
 
-    public FoodType getFoodType() {
-            return foodType;
-        }
 
-    public String getType() {
-        return type;
-    }
 }

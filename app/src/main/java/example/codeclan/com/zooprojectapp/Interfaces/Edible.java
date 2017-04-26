@@ -8,6 +8,6 @@ import example.codeclan.com.zooprojectapp.food_management.FoodType;
 
 public interface Edible {
 
-    int getNutritionalValue();
     FoodType getFoodType();
+    int getNutritionalValue();
 }

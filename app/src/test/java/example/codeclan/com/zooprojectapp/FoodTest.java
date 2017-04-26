@@ -32,8 +32,6 @@ public class FoodTest {
     }
 
     @Test
-    public void canGetPriceTest(){
-        assertEquals(20, meat.getPrice());
-    }
+    public void canGetPriceTest(){ assertEquals(20, meat.getPrice()); }
 
 }

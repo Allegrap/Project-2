@@ -37,9 +37,7 @@ public class Visitor {
         funds -= entryFee;
     }
 
-    public void addStray(Stray stray){
-        strays.add(stray);
-    }
+    public void addStray(Stray stray){ strays.add(stray); }
 
     public int strayCount(){
         return strays.size();

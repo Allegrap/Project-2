@@ -18,15 +18,13 @@ public class Food implements Edible {
         this.price = price;
     }
 
-    public int getNutritionalValue(){
-        return this.nutritionalValue;
-    }
-
     public FoodType getFoodType() {
         return foodType;
     }
 
-    public int getPrice() {
-        return price;
+    public int getNutritionalValue(){
+        return this.nutritionalValue;
     }
+
+    public int getPrice() { return price; }
 }

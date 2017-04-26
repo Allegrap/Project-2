@@ -40,9 +40,7 @@ public class Enclosure {
         return animals.size();
     }
 
-    public int numberOfFood() {
-        return food.size();
-    }
+    public int numberOfFood() { return food.size(); }
 
     public void addAnimal(Animal animal){
         if(biome == animal.getBiome()) {

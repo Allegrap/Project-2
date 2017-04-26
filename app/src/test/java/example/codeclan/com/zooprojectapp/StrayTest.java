@@ -22,19 +22,17 @@ public class StrayTest {
     }
 
     @Test
-    public void canGetTypeTest(){
+    public void getTypeTest(){
         assertEquals("dog", stray.getType());
     }
 
     @Test
-    public void canGetFoodTypeTest(){
+    public void getFoodTypeTest(){
         assertEquals(FoodType.MEAT, stray.getFoodType());
     }
 
     @Test
-    public void canGetNutritionalValueTest(){
-        assertEquals(30, stray.getNutritionalValue());
-    }
+    public void getNutritionalValueTest(){ assertEquals(30, stray.getNutritionalValue()); }
 
 
 
