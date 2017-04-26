@@ -1,5 +1,7 @@
 package example.codeclan.com.zooprojectapp.zoo_management;
 
+import java.util.ArrayList;
+
 import example.codeclan.com.zooprojectapp.food_management.Stray;
 
 /**
@@ -10,12 +12,17 @@ public class Visitor {
 
     private String name;
     private int funds;
-    private boolean stray;
+    private ArrayList<Stray> stray;
 
-    public Visitor(String name, int funds, boolean stray){
+    public Visitor(String name, int funds, ArrayList<Stray> stray){
         this.name = name;
         this.funds = funds;
         this.stray = stray;
+    }
+
+    public Visitor(String name, int funds){
+        this.name = name;
+        this.funds = funds;
     }
 
     public String getName(){
@@ -30,11 +37,14 @@ public class Visitor {
         funds -= entryFee;
     }
 
-//  TRY TOMORROW
-//    public void donateStray(){
+
+    public Stray donateStray(){
 //        if(stray == true){
-//            Zoo.acceptStray();
+//            Zoo.acceptStray(stray);
 //        }
-//    }
+        Stray donatedStray = stray.get(0);
+        stray.remove(0);
+        return donatedStray;
+    }
 
 }

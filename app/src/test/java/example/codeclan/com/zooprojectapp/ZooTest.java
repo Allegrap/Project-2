@@ -3,6 +3,9 @@ package example.codeclan.com.zooprojectapp;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 import example.codeclan.com.zooprojectapp.animals.Hippo;
 import example.codeclan.com.zooprojectapp.animals.Leopard;
 import example.codeclan.com.zooprojectapp.food_management.FoodType;
@@ -29,13 +32,17 @@ public class ZooTest {
 
     @Before
     public void before(){
+        ArrayList<Stray> list = new ArrayList<Stray>();
+        list.add(stray);
+
         zoo = new Zoo(20, 5000);
         enclosure1 = new Enclosure();
         hippo = new Hippo("Bertie", 'm', "adult");
         leopard = new Leopard("Darren", 'm', "baby");
-        visitor1 = new Visitor("Allegra", 400, false);
-        visitor2 = new Visitor("Chiara", 10, false);
+        visitor1 = new Visitor("Allegra", 400);
+        visitor2 = new Visitor("Chiara", 10, list);
         stray = new Stray("dog", FoodType.MEAT, 30);
+
     }
 
     @Test
@@ -70,6 +77,12 @@ public class ZooTest {
     @Test
     public void canGetTotalMoney(){
         assertEquals(5000, zoo.getTotalMoney());
+    }
+
+    @Test
+    public void canAcceptStray(){
+        Stray donatedStray = visitor1.donateStray();
+        zoo.acceptStray(donatedStray);
     }
 
 //  TRY TOMORROW
