@@ -3,6 +3,8 @@ package example.codeclan.com.zooprojectapp;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import example.codeclan.com.zooprojectapp.food_management.FoodType;
 import example.codeclan.com.zooprojectapp.food_management.Stray;
 import example.codeclan.com.zooprojectapp.zoo_management.Visitor;
@@ -22,9 +24,12 @@ public class VisitorTest {
 
     @Before
     public void before(){
-        visitor = new Visitor("Allegra", 400);
-        zoo = new Zoo(20, 5000, 2);
         stray = new Stray("dog", FoodType.MEAT, 30);
+        ArrayList<Stray> list = new ArrayList<Stray>();
+        list.add(stray);
+
+        visitor = new Visitor("Allegra", 400, list);
+        zoo = new Zoo(20, 5000, 2);
     }
 
     @Test
@@ -43,11 +48,17 @@ public class VisitorTest {
         assertEquals(380, visitor.getFunds());
     }
 
-    //TRY TOMORROW
+    @Test
+    public void canCountStrays(){
+        assertEquals(0, visitor.strayCount());
+    }
+
 //    @Test
 //    public void canDonateStray(){
+//
 //        visitor.donateStray(stray);
 //        assertEquals(1, zoo.strayCount());
+//        assertEquals(0, visitor.strayCount());
 //    }
 
 }
