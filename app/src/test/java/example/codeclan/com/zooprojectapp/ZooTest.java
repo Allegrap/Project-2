@@ -39,8 +39,8 @@ public class ZooTest {
 
         zoo = new Zoo(20, 5000, 2);
         enclosure1 = new Enclosure();
-        hippo = new Hippo("Bertie", 'm', "adult");
-        leopard = new Leopard("Darren", 'm', "baby");
+        hippo = new Hippo("Bertie", 'm', "adult", 900);
+        leopard = new Leopard("Darren", 'm', "baby", 700);
         visitor1 = new Visitor("Allegra", 400);
         visitor2 = new Visitor("Chiara", 10, list);
         visitor3 = new Visitor("Talitha", 20);

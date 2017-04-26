@@ -9,8 +9,8 @@ import example.codeclan.com.zooprojectapp.Interfaces.Scavengeable;
 
 public class Vulture extends Carnivore implements Flyable, Scavengeable {
 
-    public Vulture(String name, char gender, String maturity){
-        super(name, gender, maturity);
+    public Vulture(String name, char gender, String maturity, int price){
+        super(name, gender, maturity, price);
     }
 
     public String fly(){
