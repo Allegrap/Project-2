@@ -24,6 +24,7 @@ public class ZooTest {
 
     Zoo zoo;
     Enclosure enclosure1;
+    Enclosure enclosure2;
     Hippo hippo;
     Leopard leopard;
     Visitor visitor1;
@@ -39,6 +40,7 @@ public class ZooTest {
 
         zoo = new Zoo(20, 5000, 2);
         enclosure1 = new Enclosure("Africa", "grassland");
+        enclosure2 = new Enclosure("Antarctica", "arctic");
         hippo = new Hippo("Bertie", 'm', "adult", "grassland", 100, 900);
         leopard = new Leopard("Darren", 'm', "baby", "rainforest", 50, 700);
         visitor1 = new Visitor("Allegra", 400);
@@ -49,6 +51,10 @@ public class ZooTest {
     @Test
     public void canGetEntryFeeTest(){
         assertEquals(20, zoo.getEntryFee());
+    }
+
+    @Test canGetCapacity(){
+        assertEquals(2, zoo.getCapacity());
     }
 
     @Test
@@ -104,6 +110,13 @@ public class ZooTest {
     public void canGetEnclosures(){
         zoo.addEnclosure(enclosure1);
         assertEquals("Africa", zoo.getEnclosures());
+    }
+
+    @Test
+    public void canGetMultipleEnclosures(){
+        zoo.addEnclosure(enclosure1);
+        zoo.addEnclosure(enclosure2);
+        assertEquals("AfricaAntarctica", zoo.getEnclosures());
     }
 
 

@@ -32,6 +32,18 @@ public class Zoo {
         return entryFee;
     }
 
+    public int getTotalMoney() {
+        return totalMoney;
+    }
+
+    public String getEnclosures(){
+        String message = "";
+        for(Enclosure enclosure : enclosures){
+            message = message + enclosure.getName();
+        }
+        return message;
+    }
+
     public int enclosureCount(){
         return enclosures.size();
     }
@@ -57,20 +69,8 @@ public class Zoo {
         visitor.payEntryFee(entryFee);
     }
 
-    public int getTotalMoney() {
-        return totalMoney;
-    }
-
     public void acceptStray(Stray stray){
         strays.add(stray);
-    }
-
-    public String getEnclosures(){
-        String message = "";
-        for(Enclosure enclosure : enclosures){
-            message = message + enclosure.getName();
-        }
-        return message;
     }
 
 }
