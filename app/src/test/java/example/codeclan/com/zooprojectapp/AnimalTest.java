@@ -80,6 +80,12 @@ public class AnimalTest {
     }
 
     @Test
+    public void setMaturityTest(){
+        hippo.setMaturity("baby");
+        assertEquals("baby", hippo.getMaturity());
+    }
+
+    @Test
     public void canEatTest(){
         hippo.eat(grass);
         assertEquals(1, hippo.getBellySize());

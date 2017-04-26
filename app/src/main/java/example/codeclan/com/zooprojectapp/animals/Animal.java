@@ -3,6 +3,7 @@ package example.codeclan.com.zooprojectapp.animals;
 import java.util.ArrayList;
 
 import example.codeclan.com.zooprojectapp.Interfaces.Edible;
+import example.codeclan.com.zooprojectapp.food_management.Stray;
 
 /**
  * Created by user on 23/04/2017.
@@ -56,6 +57,8 @@ public abstract class Animal {
     public void setName(String newName){ name = newName; }
 
     public void setGender(char newGender){ gender = newGender; }
+
+    public void setMaturity(String newMaturity){ maturity = newMaturity; }
 
     public void eat(Edible edible){
         belly.add(edible);
