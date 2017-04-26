@@ -81,6 +81,13 @@ public class ZooTest {
     }
 
     @Test
+    public void canGetMultipleVisitors(){
+        zoo.addVisitor(visitor1);
+        zoo.addVisitor(visitor2);
+        assertEquals("AllegraChiara", zoo.getVisitors());
+    }
+
+    @Test
     public void canCountEnclosuresTest(){
         assertEquals(0, zoo.enclosureCount());
     }
