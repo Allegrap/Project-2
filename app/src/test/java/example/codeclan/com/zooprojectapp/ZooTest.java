@@ -28,6 +28,7 @@ public class ZooTest {
     Leopard leopard;
     Visitor visitor1;
     Visitor visitor2;
+    Visitor visitor3;
     Stray stray;
 
     @Before
@@ -42,6 +43,7 @@ public class ZooTest {
         leopard = new Leopard("Darren", 'm', "baby");
         visitor1 = new Visitor("Allegra", 400);
         visitor2 = new Visitor("Chiara", 10, list);
+        visitor3 = new Visitor("Talitha", 20);
     }
 
     @Test
@@ -71,6 +73,14 @@ public class ZooTest {
         assertEquals(1, zoo.visitorCount());
         assertEquals(5020, zoo.getTotalMoney());
         assertEquals(380, visitor1.getFunds());
+    }
+
+    @Test
+    public void cannotAddVisitorsOverCapacity(){
+        zoo.addVisitor(visitor1);
+        zoo.addVisitor(visitor2);
+        zoo.addVisitor(visitor3);
+        assertEquals(2, zoo.visitorCount());
     }
 
     @Test
