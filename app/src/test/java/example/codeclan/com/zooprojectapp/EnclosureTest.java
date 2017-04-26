@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import example.codeclan.com.zooprojectapp.animals.Hippo;
+import example.codeclan.com.zooprojectapp.animals.Hyena;
 import example.codeclan.com.zooprojectapp.animals.Leopard;
 import example.codeclan.com.zooprojectapp.food_management.Food;
 import example.codeclan.com.zooprojectapp.food_management.FoodType;
@@ -20,6 +21,7 @@ public class EnclosureTest {
     Enclosure enclosure;
     Hippo hippo;
     Leopard leopard;
+    Hyena hyena;
     Food meat;
     Food vegetables;
 
@@ -28,6 +30,7 @@ public class EnclosureTest {
         enclosure = new Enclosure("Africa", "grassland");
         hippo = new Hippo("Bertie", 'm', "adult", "grassland", 900);
         leopard = new Leopard("Darren", 'm', "baby", "rainforest", 700);
+        hyena = new Hyena("Chuckles", 'm', "adult", "grassland", 600);
         meat = new Food(FoodType.MEAT, 9, 20);
         vegetables = new Food(FoodType.VEGETABLES, 4, 10);
     }
@@ -46,7 +49,7 @@ public class EnclosureTest {
     @Test
     public void getAnimalsListTest(){
         enclosure.addAnimal(hippo);
-        enclosure.addAnimal(leopard);
+        enclosure.addAnimal(hyena);
         assertEquals(2, enclosure.getAnimals().size());
     }
 
