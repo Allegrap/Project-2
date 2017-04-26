@@ -53,6 +53,12 @@ public class CarnivoreTest {
     }
 
     @Test
+    public void canEatInsects(){
+        leopard.eat(insects);
+        assertEquals(1, leopard.getBellySize());
+    }
+
+    @Test
     public void cannotEatVegetablesTest(){
         leopard.eat(vegetables);
         assertEquals(0, leopard.getBellySize());
@@ -61,12 +67,6 @@ public class CarnivoreTest {
     @Test
     public void cannotEatFruitTest(){
         leopard.eat(fruit);
-        assertEquals(0, leopard.getBellySize());
-    }
-
-    @Test
-    public void cannotEatInsects(){
-        leopard.eat(insects);
         assertEquals(0, leopard.getBellySize());
     }
 

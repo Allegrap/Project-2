@@ -24,6 +24,9 @@ public abstract class Carnivore extends Animal {
         else if(food.getFoodType() == FoodType.FISH){
             belly.add(food);
         }
+        else if(food.getFoodType() == FoodType.INSECTS){
+            belly.add(food);
+        }
         return;
     }
 }
