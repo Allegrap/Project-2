@@ -72,4 +72,7 @@ public abstract class Animal {
     }
 
 
+    public int getHunger() {
+        return hunger;
+    }
 }
