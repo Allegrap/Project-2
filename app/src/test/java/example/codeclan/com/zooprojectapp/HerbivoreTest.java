@@ -21,6 +21,7 @@ public class HerbivoreTest {
     Food grass;
     Food fruit;
     Food insects;
+    Food fish;
 
     @Before
     public void before(){
@@ -30,6 +31,7 @@ public class HerbivoreTest {
         grass = new Food(FoodType.GRASS, 3, 5);
         fruit = new Food(FoodType.FRUIT, 5, 6);
         insects = new Food(FoodType.INSECTS, 2, 10);
+        fish = new Food(FoodType.FISH, 5, 15);
     }
 
     @Test
@@ -59,6 +61,12 @@ public class HerbivoreTest {
     @Test
     public void cannotEatInsectsTest(){
         hippo.eat(insects);
+        assertEquals(0, hippo.getBellySize());
+    }
+
+    @Test
+    public void cannotEatFishTest(){
+        hippo.eat(fish);
         assertEquals(0, hippo.getBellySize());
     }
 
