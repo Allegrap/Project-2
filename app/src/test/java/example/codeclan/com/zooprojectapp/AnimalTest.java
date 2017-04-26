@@ -77,4 +77,8 @@ public class AnimalTest {
         assertEquals(10, hippo.totalNutrition());
     }
 
+    @Test
+    public void animalCanPlay(){
+        assertEquals("I am playing!", hippo.play());
+    }
 }
