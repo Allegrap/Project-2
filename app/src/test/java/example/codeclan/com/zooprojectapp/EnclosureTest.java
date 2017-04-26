@@ -20,12 +20,21 @@ public class EnclosureTest {
     Enclosure enclosure;
     Hippo hippo;
     Leopard leopard;
+    Food meat;
+    Food vegetables;
 
     @Before
     public void before(){
         enclosure = new Enclosure();
         hippo = new Hippo("Bertie", 'm', "adult");
         leopard = new Leopard("Darren", 'm', "baby");
+        meat = new Food(FoodType.MEAT, 9);
+        vegetables = new Food(FoodType.VEGETABLES, 4);
+    }
+
+    @Test
+    public void canCountAnimals(){
+        assertEquals(0, enclosure.numberOfAnimals());
     }
 
     @Test
