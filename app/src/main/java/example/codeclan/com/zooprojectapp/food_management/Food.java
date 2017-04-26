@@ -25,4 +25,8 @@ public class Food implements Edible {
     public FoodType getFoodType() {
         return foodType;
     }
+
+    public int getPrice() {
+        return price;
+    }
 }
