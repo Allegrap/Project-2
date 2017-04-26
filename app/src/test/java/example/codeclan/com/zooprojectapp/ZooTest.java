@@ -53,8 +53,31 @@ public class ZooTest {
         assertEquals(20, zoo.getEntryFee());
     }
 
-    @Test canGetCapacity(){
-        assertEquals(2, zoo.getCapacity());
+    @Test
+    public void canGetTotalMoney(){
+        assertEquals(5000, zoo.getTotalMoney());
+    }
+
+    @Test
+    public void canGetCapacity(){ assertEquals(2, zoo.getCapacity()); }
+
+    @Test
+    public void canGetEnclosures(){
+        zoo.addEnclosure(enclosure1);
+        assertEquals("Africa", zoo.getEnclosures());
+    }
+
+    @Test
+    public void canGetMultipleEnclosures(){
+        zoo.addEnclosure(enclosure1);
+        zoo.addEnclosure(enclosure2);
+        assertEquals("AfricaAntarctica", zoo.getEnclosures());
+    }
+
+    @Test
+    public void canGetVisitors(){
+        zoo.addVisitor(visitor1);
+        assertEquals("Allegra", zoo.getVisitors());
     }
 
     @Test
@@ -63,14 +86,19 @@ public class ZooTest {
     }
 
     @Test
-    public void canAddEnclosureTest(){
-        zoo.addEnclosure(enclosure1);
-        assertEquals(1, zoo.enclosureCount());
+    public void canCountVisitorsTest(){
+        assertEquals(0, zoo.visitorCount());
     }
 
     @Test
-    public void canCountVisitorsTest(){
-        assertEquals(0, zoo.visitorCount());
+    public void canCountStraysTest(){
+        assertEquals(0, zoo.strayCount());
+    }
+
+    @Test
+    public void canAddEnclosureTest(){
+        zoo.addEnclosure(enclosure1);
+        assertEquals(1, zoo.enclosureCount());
     }
 
     @Test
@@ -90,34 +118,10 @@ public class ZooTest {
     }
 
     @Test
-    public void canGetTotalMoney(){
-        assertEquals(5000, zoo.getTotalMoney());
-    }
-
-    @Test
-    public void canCountStraysTest(){
-        assertEquals(0, zoo.strayCount());
-    }
-
-    @Test
     public void canAcceptStray(){
         Stray donatedStray = visitor2.donateStray();
         zoo.acceptStray(donatedStray);
         assertEquals(1, zoo.strayCount());
     }
-
-    @Test
-    public void canGetEnclosures(){
-        zoo.addEnclosure(enclosure1);
-        assertEquals("Africa", zoo.getEnclosures());
-    }
-
-    @Test
-    public void canGetMultipleEnclosures(){
-        zoo.addEnclosure(enclosure1);
-        zoo.addEnclosure(enclosure2);
-        assertEquals("AfricaAntarctica", zoo.getEnclosures());
-    }
-
 
 }
