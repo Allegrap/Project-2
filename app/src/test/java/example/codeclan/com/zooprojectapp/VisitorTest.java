@@ -53,10 +53,15 @@ public class VisitorTest {
         assertEquals(1, visitor.strayCount());
     }
 
+    @Test
+    public void canAddStray(){
+
+    }
+
 //    @Test
 //    public void canDonateStray(){
-//
-//        visitor.donateStray(stray);
+//        visitor.addStray()
+//        visitor.donateStray();
 //        assertEquals(1, zoo.strayCount());
 //        assertEquals(0, visitor.strayCount());
 //    }
