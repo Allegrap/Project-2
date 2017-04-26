@@ -21,6 +21,7 @@ public class VisitorTest {
     Visitor visitor;
     Zoo zoo;
     Stray stray;
+    Stray stray2;
 
     @Before
     public void before(){
@@ -30,6 +31,7 @@ public class VisitorTest {
 
         visitor = new Visitor("Allegra", 400, list);
         zoo = new Zoo(20, 5000, 2);
+        stray2 = new Stray("cat", FoodType.MEAT, 20);
     }
 
     @Test
@@ -55,7 +57,8 @@ public class VisitorTest {
 
     @Test
     public void canAddStray(){
-
+        visitor.addStray(stray2);
+        assertEquals(2, visitor.strayCount());
     }
 
 //    @Test
