@@ -39,9 +39,6 @@ public class Visitor {
 
 
     public Stray donateStray(){
-//        if(stray == true){
-//            Zoo.acceptStray(stray);
-//        }
         Stray donatedStray = stray.get(0);
         stray.remove(0);
         return donatedStray;
