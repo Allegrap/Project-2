@@ -32,6 +32,10 @@ public class Enclosure {
         animals.add(animal);
     }
 
+    public void addFood(Food foods){
+        food.add(foods);
+    }
+
     public ArrayList<Animal> getAnimals(){
         return new ArrayList<Animal>(animals);
     }
