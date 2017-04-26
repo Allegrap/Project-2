@@ -12,12 +12,12 @@ public class Visitor {
 
     private String name;
     private int funds;
-    private ArrayList<Stray> stray;
+    private ArrayList<Stray> strays;
 
-    public Visitor(String name, int funds, ArrayList<Stray> stray){
+    public Visitor(String name, int funds, ArrayList<Stray> strays){
         this.name = name;
         this.funds = funds;
-        this.stray = stray;
+        this.strays = strays;
     }
 
     public Visitor(String name, int funds){
@@ -39,8 +39,8 @@ public class Visitor {
 
 
     public Stray donateStray(){
-        Stray donatedStray = stray.get(0);
-        stray.remove(0);
+        Stray donatedStray = strays.get(0);
+        strays.remove(0);
         return donatedStray;
     }
 
