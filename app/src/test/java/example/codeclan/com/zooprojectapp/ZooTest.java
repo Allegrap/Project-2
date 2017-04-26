@@ -38,7 +38,7 @@ public class ZooTest {
         list.add(stray);
 
         zoo = new Zoo(20, 5000, 2);
-        enclosure1 = new Enclosure();
+        enclosure1 = new Enclosure("Africa");
         hippo = new Hippo("Bertie", 'm', "adult", "grassland", 900);
         leopard = new Leopard("Darren", 'm', "baby", "rainforest", 700);
         visitor1 = new Visitor("Allegra", 400);
@@ -102,7 +102,8 @@ public class ZooTest {
 
     @Test
     public void canGetEnclosures(){
-        assertEquals();
+        zoo.addEnclosure(enclosure1);
+        assertEquals("Africa", zoo.getEnclosures());
     }
 
 
