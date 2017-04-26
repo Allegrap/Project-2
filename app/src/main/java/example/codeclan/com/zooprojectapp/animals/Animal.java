@@ -14,14 +14,16 @@ public abstract class Animal {
     private char gender;
     private String maturity;
     private String biome;
+    private int hunger;
     protected ArrayList<Edible> belly;
     private int price;
 
-    public Animal(String name, char gender, String maturity, String biome, int price){
+    public Animal(String name, char gender, String maturity, String biome, int hunger, int price){
         this.name = name;
         this.gender = gender;
         this.maturity = maturity;
         this.biome = biome;
+        this.hunger = hunger;
         this.belly = new ArrayList<Edible>();
         this.price = price;
     }
