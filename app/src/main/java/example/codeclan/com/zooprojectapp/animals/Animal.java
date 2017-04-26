@@ -39,6 +39,14 @@ public abstract class Animal {
         return maturity;
     }
 
+    public int getPrice() {
+        return price;
+    }
+
+    public String getBiome() {
+        return biome;
+    }
+
     public int getBellySize() { return belly.size(); }
 
     public void eat(Edible edible){
@@ -57,11 +65,9 @@ public abstract class Animal {
         return totalFood;
     }
 
-    public int getPrice() {
-        return price;
-    }
-
     public String play(){
         return "I am playing!";
     }
+
+
 }
