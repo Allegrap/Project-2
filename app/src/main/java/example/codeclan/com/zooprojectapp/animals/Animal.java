@@ -60,6 +60,8 @@ public abstract class Animal {
 
     public void setMaturity(String newMaturity){ maturity = newMaturity; }
 
+    public void setPrice(int newPrice){ price = newPrice; }
+
     public void eat(Edible edible){
         belly.add(edible);
         hunger -= edible.getNutritionalValue();

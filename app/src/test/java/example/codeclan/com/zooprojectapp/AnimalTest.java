@@ -86,6 +86,12 @@ public class AnimalTest {
     }
 
     @Test
+    public void setPriceTest(){
+        hippo.setPrice(600);
+        assertEquals(600, hippo.getPrice());
+    }
+
+    @Test
     public void canEatTest(){
         hippo.eat(grass);
         assertEquals(1, hippo.getBellySize());
