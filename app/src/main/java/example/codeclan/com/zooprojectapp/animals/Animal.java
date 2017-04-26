@@ -62,6 +62,8 @@ public abstract class Animal {
 
     public void setPrice(int newPrice){ price = newPrice; }
 
+    public void setBiome(String newBiome){ biome = newBiome; }
+
     public void eat(Edible edible){
         belly.add(edible);
         hunger -= edible.getNutritionalValue();

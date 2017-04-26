@@ -92,6 +92,12 @@ public class AnimalTest {
     }
 
     @Test
+    public void setBiomeTest(){
+        hippo.setBiome("arctic");
+        assertEquals("arctic", hippo.getBiome());
+    }
+
+    @Test
     public void canEatTest(){
         hippo.eat(grass);
         assertEquals(1, hippo.getBellySize());
