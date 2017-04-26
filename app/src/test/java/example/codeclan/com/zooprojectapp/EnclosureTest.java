@@ -60,12 +60,12 @@ public class EnclosureTest {
     }
 
     @Test
-    public void canCountAnimalsTest(){
+    public void countAnimalsTest(){
         assertEquals(0, enclosure.numberOfAnimals());
     }
 
     @Test
-    public void canCountFoodTest(){
+    public void countFoodTest(){
         assertEquals(0, enclosure.numberOfFood());
     }
 
@@ -83,14 +83,14 @@ public class EnclosureTest {
     }
 
     @Test
-    public void canAddFoodTest(){
+    public void addFoodTest(){
         enclosure.addFood(meat);
         enclosure.addFood(vegetables);
         assertEquals(2, enclosure.numberOfFood());
     }
 
     @Test
-    public void canFeedAnimalsTest(){
+    public void feedAnimalsTest(){
         enclosure.addAnimal(hippo);
         Food food = new Food(FoodType.VEGETABLES, 5, 10);
         enclosure.feedAnimal(hippo, food);

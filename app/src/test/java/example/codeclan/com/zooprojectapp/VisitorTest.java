@@ -35,34 +35,34 @@ public class VisitorTest {
     }
 
     @Test
-    public void canGetNameTest(){
+    public void getNameTest(){
         assertEquals("Allegra", visitor.getName());
     }
 
     @Test
-    public void canGetFundsTest(){
+    public void getFundsTest(){
         assertEquals(400, visitor.getFunds());
     }
 
     @Test
-    public void canPayEntryFee(){
+    public void payEntryFeeTest(){
         visitor.payEntryFee(zoo.getEntryFee());
         assertEquals(380, visitor.getFunds());
     }
 
     @Test
-    public void canCountStrays(){
+    public void countStraysTest(){
         assertEquals(1, visitor.strayCount());
     }
 
     @Test
-    public void canAddStray(){
+    public void addStrayTest(){
         visitor.addStray(stray2);
         assertEquals(2, visitor.strayCount());
     }
 
     @Test
-    public void canDonateStray(){
+    public void donateStrayTest(){
         Stray strayToDonate = visitor.donateStray();
         zoo.acceptStray(strayToDonate);
         assertEquals(1, zoo.strayCount());

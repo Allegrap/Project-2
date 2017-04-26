@@ -63,7 +63,7 @@ public class AnimalTest {
     }
 
     @Test
-    public void canGetBellySizeTest(){
+    public void getBellySizeTest(){
         assertEquals(0, hippo.getBellySize());
     }
 

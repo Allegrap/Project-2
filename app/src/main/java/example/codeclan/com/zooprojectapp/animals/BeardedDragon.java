@@ -14,10 +14,6 @@ public class BeardedDragon extends Omnivore implements Climbable {
         super(name, gender, maturity, biome, hunger, price);
     }
 
-    public String climb(){
-        return "I can climb!";
-    }
-
     @Override
     public void eat(Edible food){
         if(food.getFoodType() == FoodType.INSECTS){
@@ -30,6 +26,10 @@ public class BeardedDragon extends Omnivore implements Climbable {
             belly.add(food);
         }
         return;
+    }
+
+    public String climb(){
+        return "I can climb!";
     }
 
 }

@@ -49,67 +49,67 @@ public class ZooTest {
     }
 
     @Test
-    public void canGetEntryFeeTest(){
+    public void getEntryFeeTest(){
         assertEquals(20, zoo.getEntryFee());
     }
 
     @Test
-    public void canGetTotalMoney(){
+    public void getTotalMoneyTest(){
         assertEquals(5000, zoo.getTotalMoney());
     }
 
     @Test
-    public void canGetCapacity(){ assertEquals(2, zoo.getCapacity()); }
+    public void getCapacityTest(){ assertEquals(2, zoo.getCapacity()); }
 
     @Test
-    public void canGetEnclosures(){
+    public void getEnclosuresTest(){
         zoo.addEnclosure(enclosure1);
         assertEquals("Africa", zoo.getEnclosures());
     }
 
     @Test
-    public void canGetMultipleEnclosures(){
+    public void getMultipleEnclosuresTest(){
         zoo.addEnclosure(enclosure1);
         zoo.addEnclosure(enclosure2);
         assertEquals("AfricaAntarctica", zoo.getEnclosures());
     }
 
     @Test
-    public void canGetVisitors(){
+    public void getVisitorsTest(){
         zoo.addVisitor(visitor1);
         assertEquals("Allegra", zoo.getVisitors());
     }
 
     @Test
-    public void canGetMultipleVisitors(){
+    public void getMultipleVisitorsTest(){
         zoo.addVisitor(visitor1);
         zoo.addVisitor(visitor2);
         assertEquals("AllegraChiara", zoo.getVisitors());
     }
 
     @Test
-    public void canCountEnclosuresTest(){
+    public void countEnclosuresTest(){
         assertEquals(0, zoo.enclosureCount());
     }
 
     @Test
-    public void canCountVisitorsTest(){
+    public void countVisitorsTest(){
         assertEquals(0, zoo.visitorCount());
     }
 
     @Test
-    public void canCountStraysTest(){
+    public void countStraysTest(){
         assertEquals(0, zoo.strayCount());
     }
 
     @Test
-    public void canAddEnclosureTest(){
+    public void addEnclosureTest(){
         zoo.addEnclosure(enclosure1);
         assertEquals(1, zoo.enclosureCount());
     }
 
     @Test
-    public void canAddVisitorTest(){
+    public void addVisitorTest(){
         zoo.addVisitor(visitor1);
         assertEquals(1, zoo.visitorCount());
         assertEquals(5020, zoo.getTotalMoney());
@@ -117,7 +117,7 @@ public class ZooTest {
     }
 
     @Test
-    public void cannotAddVisitorsOverCapacity(){
+    public void cannotAddVisitorsOverCapacityTest(){
         zoo.addVisitor(visitor1);
         zoo.addVisitor(visitor2);
         zoo.addVisitor(visitor3);
@@ -125,7 +125,7 @@ public class ZooTest {
     }
 
     @Test
-    public void canAcceptStray(){
+    public void acceptStrayTest(){
         Stray donatedStray = visitor2.donateStray();
         zoo.acceptStray(donatedStray);
         assertEquals(1, zoo.strayCount());

@@ -22,16 +22,16 @@ public class FoodTest {
     }
 
     @Test
-    public void canGetFoodTypeTest(){
+    public void getFoodTypeTest(){
         assertEquals(FoodType.MEAT, meat.getFoodType());
     }
 
     @Test
-    public void canGetNutritionalValueTest(){
+    public void getNutritionalValueTest(){
         assertEquals(9, meat.getNutritionalValue());
     }
 
     @Test
-    public void canGetPriceTest(){ assertEquals(20, meat.getPrice()); }
+    public void getPriceTest(){ assertEquals(20, meat.getPrice()); }
 
 }
