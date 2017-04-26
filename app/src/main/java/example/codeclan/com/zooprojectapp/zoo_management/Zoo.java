@@ -14,13 +14,15 @@ public class Zoo {
 
     private int entryFee;
     protected int totalMoney;
+    private int capacity;
     private ArrayList<Enclosure> enclosures;
     private ArrayList<Visitor> visitors;
     private ArrayList<Stray> strays;
 
-    public Zoo(int entryFee, int totalMoney) {
+    public Zoo(int entryFee, int totalMoney, int capacity) {
         this.entryFee = entryFee;
         this.totalMoney = totalMoney;
+        this.capacity = capacity;
         this.enclosures = new ArrayList<Enclosure>();
         this.visitors = new ArrayList<Visitor>();
         this.strays = new ArrayList<Stray>();
