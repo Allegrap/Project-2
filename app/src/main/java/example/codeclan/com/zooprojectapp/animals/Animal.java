@@ -54,4 +54,8 @@ public abstract class Animal {
         }
         return totalFood;
     }
+
+    public int getPrice() {
+        return price;
+    }
 }
