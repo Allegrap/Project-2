@@ -31,5 +31,9 @@ public class FoodTest {
         assertEquals(9, meat.getNutritionalValue());
     }
 
+    @Test
+    public void canGetPriceTest(){
+        assertEquals(20, meat.getPrice());
+    }
 
 }
