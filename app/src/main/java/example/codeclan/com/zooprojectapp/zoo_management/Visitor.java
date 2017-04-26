@@ -33,6 +33,10 @@ public class Visitor {
         return funds;
     }
 
+    public void setName(String newName){
+        name = newName;
+    }
+
     public void payEntryFee(int entryFee){
         funds -= entryFee;
     }
