@@ -22,6 +22,7 @@ public class OmnivoreTest {
     Food grass;
     Food fruit;
     Food fish;
+    Food insects;
 
     @Before
     public void before(){
@@ -31,6 +32,13 @@ public class OmnivoreTest {
         vegetables = new Food(FoodType.VEGETABLES, 4);
         grass = new Food(FoodType.GRASS, 3);
         fruit = new Food(FoodType.FRUIT, 5);
+        insects = new Food(FoodType.INSECTS, 2);
+    }
+
+    @Test
+    public void canEatInsects(){
+        beardedDragon.eat(insects);
+        assertEquals(1, beardedDragon.getBellySize());
     }
 
     @Test
