@@ -58,4 +58,8 @@ public abstract class Animal {
     public int getPrice() {
         return price;
     }
+
+    public String play(){
+        return "I am playing!";
+    }
 }
