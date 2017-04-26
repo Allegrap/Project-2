@@ -27,4 +27,8 @@ public class Food implements Edible {
     }
 
     public int getPrice() { return price; }
+
+    public void setNutritionalValue(int newNutritionalValue){
+        nutritionalValue = newNutritionalValue;
+    }
 }

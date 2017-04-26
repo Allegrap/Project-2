@@ -34,4 +34,10 @@ public class FoodTest {
     @Test
     public void getPriceTest(){ assertEquals(20, meat.getPrice()); }
 
+    @Test
+    public void setNutritionalValueTest(){
+        meat.setNutritionalValue(12);
+        assertEquals(12, meat.getNutritionalValue());
+    }
+
 }
