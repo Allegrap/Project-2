@@ -24,6 +24,18 @@ public class Enclosure {
         this.food = new ArrayList<Food>();
     }
 
+    public String getName(){
+        return name;
+    }
+
+    public String getBiome() { return biome; }
+
+    public ArrayList<Animal> getAnimals(){
+        return new ArrayList<Animal>(animals);
+    }
+
+    public ArrayList<Food> getFood(){ return new ArrayList<Food>(food); }
+
     public int numberOfAnimals() {
         return animals.size();
     }
@@ -39,19 +51,9 @@ public class Enclosure {
 
     }
 
-    public String getName(){
-        return name;
-    }
-
     public void addFood(Food foods){
         food.add(foods);
     }
-
-    public ArrayList<Animal> getAnimals(){
-        return new ArrayList<Animal>(animals);
-    }
-
-    public ArrayList<Food> getFood(){ return new ArrayList<Food>(food); }
 
     public void feedAnimal(Animal animalToFeed, Edible edible){
 
@@ -62,7 +64,4 @@ public class Enclosure {
         }
     }
 
-    public String getBiome() {
-        return biome;
-    }
 }

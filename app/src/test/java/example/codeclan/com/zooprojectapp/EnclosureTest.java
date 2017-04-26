@@ -36,24 +36,13 @@ public class EnclosureTest {
     }
 
     @Test
-    public void canGetName(){
+    public void getNameTest(){
         assertEquals("Africa", enclosure.getName());
     }
 
     @Test
-    public void canGetBiome(){
+    public void getBiomeTest(){
         assertEquals("grassland", enclosure.getBiome());
-    }
-
-    @Test
-    public void canCountAnimals(){
-        assertEquals(0, enclosure.numberOfAnimals());
-    }
-
-    @Test
-    public void addAnimalTest(){
-        enclosure.addAnimal(hippo);
-        assertEquals(1, enclosure.numberOfAnimals());
     }
 
     @Test
@@ -64,6 +53,29 @@ public class EnclosureTest {
     }
 
     @Test
+    public void getFoodListTest(){
+        enclosure.addFood(meat);
+        enclosure.addFood(vegetables);
+        assertEquals(2, enclosure.getFood().size());
+    }
+
+    @Test
+    public void canCountAnimalsTest(){
+        assertEquals(0, enclosure.numberOfAnimals());
+    }
+
+    @Test
+    public void canCountFoodTest(){
+        assertEquals(0, enclosure.numberOfFood());
+    }
+
+    @Test
+    public void addAnimalTest(){
+        enclosure.addAnimal(hippo);
+        assertEquals(1, enclosure.numberOfAnimals());
+    }
+
+    @Test
     public void cannotAddAnimalWithDifferentBiomeTest(){
         enclosure.addAnimal(hippo);
         enclosure.addAnimal(leopard);
@@ -71,22 +83,10 @@ public class EnclosureTest {
     }
 
     @Test
-    public void canCountFood(){
-        assertEquals(0, enclosure.numberOfFood());
-    }
-
-    @Test
-    public void canAddFood(){
+    public void canAddFoodTest(){
         enclosure.addFood(meat);
         enclosure.addFood(vegetables);
         assertEquals(2, enclosure.numberOfFood());
-    }
-
-    @Test
-    public void getFoodListTest(){
-        enclosure.addFood(meat);
-        enclosure.addFood(vegetables);
-        assertEquals(2, enclosure.getFood().size());
     }
 
     @Test
