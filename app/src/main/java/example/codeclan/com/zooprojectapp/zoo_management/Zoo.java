@@ -54,6 +54,14 @@ public class Zoo {
         return message;
     }
 
+    public void setEntryFee(int newEntryFee){
+        entryFee = newEntryFee;
+    }
+
+    public void setCapacity(int newCapacity){
+        capacity = newCapacity;
+    }
+
     public int enclosureCount(){
         return enclosures.size();
     }

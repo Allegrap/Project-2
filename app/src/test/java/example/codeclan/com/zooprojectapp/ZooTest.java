@@ -88,6 +88,18 @@ public class ZooTest {
     }
 
     @Test
+    public void setEntryFeeTest(){
+        zoo.setEntryFee(30);
+        assertEquals(30, zoo.getEntryFee());
+    }
+
+    @Test
+    public void setCapacityTest(){
+        zoo.setCapacity(4);
+        assertEquals(4, zoo.getCapacity());
+    }
+
+    @Test
     public void countEnclosuresTest(){
         assertEquals(0, zoo.enclosureCount());
     }
