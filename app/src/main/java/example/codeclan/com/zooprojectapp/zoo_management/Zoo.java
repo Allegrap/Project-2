@@ -97,6 +97,6 @@ public class Zoo {
         if(enclosure.getBiome() == animal.getBiome()) {
             enclosure.acceptAnimal(animal);
         }
-
+        totalMoney -= animal.getPrice();
     }
 }
