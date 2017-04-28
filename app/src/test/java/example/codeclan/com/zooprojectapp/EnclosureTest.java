@@ -85,7 +85,7 @@ public class EnclosureTest {
     }
 
     @Test
-    public void addAnimalTest(){
+    public void acceptAnimalTest(){
         zoo.addAnimalToEnclosure(hippo, enclosure);
         assertEquals(1, enclosure.numberOfAnimals());
     }

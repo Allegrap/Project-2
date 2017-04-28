@@ -143,4 +143,10 @@ public class ZooTest {
         assertEquals(1, zoo.strayCount());
     }
 
+    @Test
+    public void addAnimalToEnclosureTest(){
+        zoo.addAnimalToEnclosure(hippo, enclosure1);
+        assertEquals(1, enclosure1.numberOfAnimals());
+    }
+
 }
