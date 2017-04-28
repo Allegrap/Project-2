@@ -9,6 +9,7 @@ import example.codeclan.com.zooprojectapp.animals.Leopard;
 import example.codeclan.com.zooprojectapp.food_management.Food;
 import example.codeclan.com.zooprojectapp.food_management.FoodType;
 import example.codeclan.com.zooprojectapp.zoo_management.Enclosure;
+import example.codeclan.com.zooprojectapp.zoo_management.Zoo;
 
 import static junit.framework.Assert.assertEquals;
 
@@ -18,6 +19,7 @@ import static junit.framework.Assert.assertEquals;
 
 public class EnclosureTest {
 
+    Zoo zoo;
     Enclosure enclosure;
     Hippo hippo;
     Leopard leopard;
@@ -27,6 +29,7 @@ public class EnclosureTest {
 
     @Before
     public void before(){
+        zoo = new Zoo(20, 5000, 2);
         enclosure = new Enclosure("Africa", "grassland");
         hippo = new Hippo("Bertie", 'm', "adult", "grassland", 100, 900);
         leopard = new Leopard("Darren", 'm', "baby", "rainforest", 50, 700);
@@ -47,8 +50,8 @@ public class EnclosureTest {
 
     @Test
     public void getAnimalsListTest(){
-        enclosure.addAnimal(hippo);
-        enclosure.addAnimal(hyena);
+        zoo.addAnimalToEnclosure(hippo, enclosure);
+        zoo.addAnimalToEnclosure(hyena, enclosure);
         assertEquals(2, enclosure.getAnimals().size());
     }
 
@@ -83,14 +86,14 @@ public class EnclosureTest {
 
     @Test
     public void addAnimalTest(){
-        enclosure.addAnimal(hippo);
+        zoo.addAnimalToEnclosure(hippo, enclosure);
         assertEquals(1, enclosure.numberOfAnimals());
     }
 
     @Test
     public void cannotAddAnimalWithDifferentBiomeTest(){
-        enclosure.addAnimal(hippo);
-        enclosure.addAnimal(leopard);
+        zoo.addAnimalToEnclosure(hippo, enclosure);
+        zoo.addAnimalToEnclosure(leopard, enclosure);
         assertEquals(1, enclosure.getAnimals().size());
     }
 
@@ -103,7 +106,7 @@ public class EnclosureTest {
 
     @Test
     public void feedAnimalsTest(){
-        enclosure.addAnimal(hippo);
+        zoo.addAnimalToEnclosure(hippo, enclosure);
         Food food = new Food(FoodType.VEGETABLES, 5, 10);
         enclosure.feedAnimal(hippo, food);
         assertEquals(1, hippo.getBellySize());
