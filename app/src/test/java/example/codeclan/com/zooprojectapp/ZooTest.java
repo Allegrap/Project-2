@@ -149,4 +149,10 @@ public class ZooTest {
         assertEquals(1, enclosure1.numberOfAnimals());
     }
 
+    @Test
+    public void totalMoneyOfZooGoesDownWhenAnimalIsAddedToEnclosureTest(){
+        zoo.addAnimalToEnclosure(hippo, enclosure1);
+        assertEquals(4100, zoo.getTotalMoney());
+    }
+
 }

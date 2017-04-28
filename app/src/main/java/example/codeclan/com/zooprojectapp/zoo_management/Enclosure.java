@@ -57,7 +57,7 @@ public class Enclosure {
         animals.add(animal);
     }
 
-    public void addFood(Food foods){
+    public void acceptFood(Food foods){
         food.add(foods);
     }
 

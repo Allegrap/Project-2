@@ -3,6 +3,7 @@ package example.codeclan.com.zooprojectapp.zoo_management;
 import java.util.ArrayList;
 
 import example.codeclan.com.zooprojectapp.animals.Animal;
+import example.codeclan.com.zooprojectapp.food_management.Food;
 import example.codeclan.com.zooprojectapp.food_management.Stray;
 import example.codeclan.com.zooprojectapp.zoo_management.Enclosure;
 import example.codeclan.com.zooprojectapp.zoo_management.Visitor;
@@ -98,5 +99,10 @@ public class Zoo {
             enclosure.acceptAnimal(animal);
         }
         totalMoney -= animal.getPrice();
+    }
+
+    public void addFoodToEnclosure(Food food, Enclosure enclosure){
+        enclosure.acceptFood(food);
+        totalMoney -= food.getPrice();
     }
 }
