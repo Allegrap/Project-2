@@ -25,6 +25,7 @@ public class Visitor {
         this.funds = funds;
     }
 
+//  Getters and setters
     public String getName(){
         return name;
     }
@@ -37,15 +38,16 @@ public class Visitor {
         name = newName;
     }
 
-    public void setFunds(int newFunds){
-        funds= newFunds;
-    }
+    public void setFunds(int newFunds){ funds= newFunds; }
 
+//  Others
     public void payEntryFee(int entryFee){
         funds -= entryFee;
     }
 
-    public void addStray(Stray stray){ strays.add(stray); }
+    public void addStray(Stray stray){
+        strays.add(stray);
+    }
 
     public int strayCount(){
         return strays.size();

@@ -22,9 +22,7 @@ public class Stray implements Edible {
         return type;
     }
 
-    public FoodType getFoodType() {
-        return foodType;
-    }
+    public FoodType getFoodType() { return foodType; }
 
     public int getNutritionalValue(){
             return this.nutritionalValue;

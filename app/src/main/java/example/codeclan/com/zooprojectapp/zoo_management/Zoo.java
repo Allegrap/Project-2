@@ -28,6 +28,7 @@ public class Zoo {
         this.strays = new ArrayList<Stray>();
     }
 
+//  Getters and setters
     public int getEntryFee() {
         return entryFee;
     }
@@ -58,10 +59,9 @@ public class Zoo {
         entryFee = newEntryFee;
     }
 
-    public void setCapacity(int newCapacity){
-        capacity = newCapacity;
-    }
+    public void setCapacity(int newCapacity){ capacity = newCapacity; }
 
+//  Counts
     public int enclosureCount(){
         return enclosures.size();
     }
@@ -74,6 +74,7 @@ public class Zoo {
         return strays.size();
     }
 
+//  Others
     public void addEnclosure(Enclosure enclosure){
         enclosures.add(enclosure);
     }

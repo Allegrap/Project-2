@@ -18,6 +18,7 @@ public class Food implements Edible {
         this.price = price;
     }
 
+//  Getters and setters
     public FoodType getFoodType() {
         return foodType;
     }
@@ -28,11 +29,7 @@ public class Food implements Edible {
 
     public int getPrice() { return price; }
 
-    public void setNutritionalValue(int newNutritionalValue){
-        nutritionalValue = newNutritionalValue;
-    }
+    public void setNutritionalValue(int newNutritionalValue){ nutritionalValue = newNutritionalValue; }
 
-    public void setPrice(int newPrice){
-        price = newPrice;
-    }
+    public void setPrice(int newPrice){ price = newPrice; }
 }

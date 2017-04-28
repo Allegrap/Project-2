@@ -24,6 +24,7 @@ public class Enclosure {
         this.food = new ArrayList<Food>();
     }
 
+//  Getters and setters
     public String getName(){
         return name;
     }
@@ -40,15 +41,17 @@ public class Enclosure {
         name = newName;
     }
 
-    public void setBiome(String newBiome){
-        biome = newBiome;
-    }
+    public void setBiome(String newBiome){  biome = newBiome; }
 
+
+//  Others
     public int numberOfAnimals() {
         return animals.size();
     }
 
-    public int numberOfFood() { return food.size(); }
+    public int numberOfFood() {
+        return food.size();
+    }
 
     public void addAnimal(Animal animal){
         if(biome == animal.getBiome()) {
@@ -62,7 +65,6 @@ public class Enclosure {
     }
 
     public void feedAnimal(Animal animalToFeed, Edible edible){
-
         for(Animal animal : animals){
             if(animalToFeed.getName() == animal.getName()) {
                 animal.eat(edible);
