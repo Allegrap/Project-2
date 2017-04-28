@@ -30,6 +30,7 @@ public abstract class Animal {
     }
 
 
+//  Getters and Setters
     public String getName() {
         return name;
     }
@@ -63,6 +64,9 @@ public abstract class Animal {
     public void setPrice(int newPrice){ price = newPrice; }
 
     public void setBiome(String newBiome){ biome = newBiome; }
+
+
+//  Other stuff
 
     public void eat(Edible edible){
         belly.add(edible);
