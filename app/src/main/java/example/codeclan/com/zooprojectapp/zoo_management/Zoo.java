@@ -2,6 +2,7 @@ package example.codeclan.com.zooprojectapp.zoo_management;
 
 import java.util.ArrayList;
 
+import example.codeclan.com.zooprojectapp.animals.Animal;
 import example.codeclan.com.zooprojectapp.food_management.Stray;
 import example.codeclan.com.zooprojectapp.zoo_management.Enclosure;
 import example.codeclan.com.zooprojectapp.zoo_management.Visitor;
@@ -90,5 +91,12 @@ public class Zoo {
 
     public void acceptStray(Stray stray){
         strays.add(stray);
+    }
+
+    public void addAnimalToEnclosure(Animal animal, Enclosure enclosure){
+        if(enclosure.getBiome() == animal.getBiome()) {
+            enclosure.acceptAnimal(animal);
+        }
+
     }
 }
