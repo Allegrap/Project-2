@@ -69,4 +69,15 @@ public class Enclosure {
         }
     }
 
+    public String findAnimalByName(String name){
+        for(Animal animal : this.animals){
+            if(animal.getName().equals(name)) {
+                return animal.getName();
+            }
+        }
+        return null;
+    }
+
+
+
 }

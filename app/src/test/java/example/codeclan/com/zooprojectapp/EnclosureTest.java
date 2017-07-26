@@ -57,8 +57,8 @@ public class EnclosureTest {
 
     @Test
     public void getFoodListTest(){
-        enclosure.addFood(meat);
-        enclosure.addFood(vegetables);
+        enclosure.acceptFood(meat);
+        enclosure.acceptFood(vegetables);
         assertEquals(2, enclosure.getFood().size());
     }
 
@@ -99,8 +99,8 @@ public class EnclosureTest {
 
     @Test
     public void addFoodTest(){
-        enclosure.addFood(meat);
-        enclosure.addFood(vegetables);
+        enclosure.acceptFood(meat);
+        enclosure.acceptFood(vegetables);
         assertEquals(2, enclosure.numberOfFood());
     }
 
@@ -110,6 +110,12 @@ public class EnclosureTest {
         Food food = new Food(FoodType.VEGETABLES, 5, 10);
         enclosure.feedAnimal(hippo, food);
         assertEquals(1, hippo.getBellySize());
+    }
+
+    @Test
+    public void findAnimalByNameTest(){
+        zoo.addAnimalToEnclosure(hippo, enclosure);
+        assertEquals("Bertie", enclosure.findAnimalByName("Bertie"));
     }
 
 }
